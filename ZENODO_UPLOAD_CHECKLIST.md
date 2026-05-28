@@ -12,18 +12,19 @@ The following raw archives are present in `data/raw_archives/` and recorded in `
 - `ned3-005_Hit2Flux.zip`
 - `ned3-006_BoilingImageSequence.zip`
 
-## Large Folder Still To Archive
+The `ned3-007` source folder is also staged locally as a raw folder copy:
 
-The `ned3-007` source folder is approximately 66.8 GB:
+- `data/raw_archives/ned3-007_MultimodalBoilingData`
 
-`Z:\ned3_007_MultimodalBoilingData`
+This folder contains 322 files and is inventoried in `MANIFEST_NED3_007_FILES.csv`.
 
-Before final Zenodo upload, either:
+## Optional Archive Step
 
-1. Create a compressed archive of this folder and place it in `data/raw_archives/`, or
-2. Upload the folder contents separately if using a Zenodo-compatible bulk upload workflow.
+If uploading many individual files to Zenodo is inconvenient, create a compressed or uncompressed archive of:
 
-After staging `ned3-007`, refresh `MANIFEST.csv` with the file size and SHA256 checksum.
+`data/raw_archives/ned3-007_MultimodalBoilingData`
+
+The first attempt with Windows `tar` produced a truncated archive, so verify any large single-file archive before upload by listing its contents and checking its size.
 
 ## Suggested Zenodo Metadata
 

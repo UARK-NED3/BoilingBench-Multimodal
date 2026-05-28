@@ -1,0 +1,323 @@
+path,bytes
+data/raw_archives/ned3-007_MultimodalBoilingData/Data info.txt,194
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Heat_flux.m,2615
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_105.DTA,5541715
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_105.TXT,181423
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_120.DTA,6849655
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_120.TXT,224617
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_135.DTA,7627803
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_135.TXT,250354
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_15.DTA,3288871
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_15.TXT,106763
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_150.DTA,8457919
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_150.TXT,277816
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_165.DTA,9004371
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_165.TXT,295825
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_180.DTA,10024505
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_180.TXT,329635
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_195.DTA,11666197
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_195.TXT,384007
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_30.DTA,4494575
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_30.TXT,146714
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_45.DTA,3649755
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_45.TXT,118838
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_60.DTA,3824927
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_60.TXT,124565
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_75.DTA,3545553
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_75.TXT,115388
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_90.DTA,4325553
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_90.TXT,141125
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_CHF.DTA,66899277
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/AE/SS_AE_Sensor_PH0_CHF.TXT,2210713
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_105.lvm,159332240
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_120.lvm,160762758
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_135.lvm,162854444
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_15.lvm,156488680
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_150.lvm,161032967
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_165.lvm,160028594
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_180.lvm,161650214
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_195.lvm,162115098
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_30.lvm,156714340
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_45.lvm,156823114
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_60.lvm,157025709
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_75.lvm,161096309
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_90.lvm,158945373
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Hydrophone/SS_Hydrophone_PH0_CHF.lvm,373627073
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_105.lvm,380959182
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_120.lvm,382688638
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_135.lvm,386147550
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_15.lvm,385282822
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_150.lvm,381823910
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_165.lvm,378364998
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_180.lvm,380959182
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_195.lvm,380959182
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_30.lvm,385282822
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_45.lvm,382688638
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_60.lvm,381823910
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_75.lvm,389606455
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_90.lvm,381823910
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Temperature/SS_Temperature_PH0_CHF.lvm,892388721
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_105.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_120.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_135.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_15.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_150.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_165.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_180.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_195.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_30.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_45.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_60.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_75.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_90.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH0_B69/Videos/SS_Images_PH0_CHF.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_110.DTA,1209625
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_110.TXT,38114
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_130.DTA,1885457
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_130.TXT,60539
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_15.DTA,122917
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_15.TXT,2163
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_150.DTA,2195929
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_150.TXT,70682
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_170.DTA,3211783
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_170.TXT,104285
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_190.DTA,4042273
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_190.TXT,131816
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_210.DTA,4918225
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_210.TXT,160796
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_30.DTA,68163
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_30.TXT,369
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_50.DTA,90871
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_50.TXT,1128
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_70.TXT,3474
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_90.DTA,516765
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_90.TXT,15204
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_CHF.DTA,29778557
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/AE/SS_AE_Sensor_PH10_CHF.TXT,983073
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_110.lvm,116629533
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_130.lvm,116520746
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_15.lvm,114592241
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_150.lvm,112417200
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_170.lvm,112286995
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_190.lvm,116563753
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_210.lvm,113353969
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_30.lvm,107950298
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_50.lvm,103762551
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_70.lvm,114185009
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_90.lvm,110873311
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Hydrophone/SS_Hydrophone_PH10_CHF.lvm,139302258
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_110.lvm,409495206
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_130.lvm,406901022
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_15.lvm,409495206
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_150.lvm,390471190
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_170.lvm,389606462
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_190.lvm,403442110
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_210.lvm,393065374
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_30.lvm,385282822
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_50.lvm,370582446
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_70.lvm,406036294
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_90.lvm,392200646
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Temperature/SS_Temperature_PH10_CHF.lvm,489050182
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_110.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_130.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_15.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_150.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_170.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_190.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_210.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_30.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_50.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_70.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_90.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH10_B83/Videos/SS_Images_PH10_CHF.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_110.DTA,296321
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_110.TXT,7957
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_130.DTA,375211
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_130.TXT,10579
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_15.DTA,77641
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_15.TXT,710
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_150.DTA,556637
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_150.TXT,16582
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_170.DTA,838779
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_170.TXT,25897
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_190.DTA,1128817
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_190.TXT,35488
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_30.DTA,70935
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_30.TXT,434
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_50.DTA,71313
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_50.TXT,503
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_70.DTA,98319
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_70.TXT,1400
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_90.DTA,233405
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_90.TXT,5816
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_CHF.DTA,23555739
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/AE/SS_AE_Sensor_PH12_CHF.TXT,777169
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_110.lvm,78788223
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_130.lvm,81236277
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_15.lvm,82404830
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_150.lvm,80625051
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_170.lvm,81282921
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_190.lvm,81760153
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_30.lvm,81004329
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_50.lvm,80631553
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_70.lvm,80802438
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_90.lvm,79708105
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Hydrophone/SS_Hydrophone_PH12_CHF.lvm,171416544
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_110.lvm,277191822
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_130.lvm,283244918
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_15.lvm,295351110
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_150.lvm,280650734
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_170.lvm,282380190
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_190.lvm,283247307
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_30.lvm,289298014
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_50.lvm,288433286
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_70.lvm,288433286
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_90.lvm,283244918
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Temperature/SS_Temperature_PH12_CHF.lvm,598870638
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_110.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_130.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_15.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_150.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_170.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_190.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_30.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_50.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_70.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_90.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/PH12_B81/Videos/SS_Images_PH12_CHF.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_105.DTA,1198785
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_105.TXT,37765
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_15.DTA,735351
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_15.TXT,22307
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_30.DTA,672109
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_30.TXT,20306
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_45.DTA,562605
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_45.TXT,16580
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_60.DTA,835199
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_60.TXT,25550
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_75.DTA,672561
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_75.TXT,20168
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_90.DTA,725271
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_90.TXT,21962
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_CHF.DTA,2216515
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/AE/SS_AE_Sensor_Polished_Copper_CHF.TXT,71368
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_105.lvm,208407328
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_15.lvm,202865639
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_30.lvm,183169254
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_45.lvm,209500619
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_60.lvm,249186032
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_75.lvm,250189219
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_90.lvm,209719030
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Hydrophone/SS_Hydrophone_Polished_Copper_CHF.lvm,252180512
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_105.lvm,514127294
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_15.lvm,497697462
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_30.lvm,453596334
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_45.lvm,521045111
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_60.lvm,608382646
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_75.lvm,612706286
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_90.lvm,517586206
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Temperature/SS_Temperature_Polished_Copper_CHF.lvm,626198254
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_105.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_15.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_30.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_45.cine,346363260
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_60.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_75.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_90.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished Cu_B78/Videos/SS_Images_Polished_Copper_CHF.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_105.DTA,83001304
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_105.TXT,760883
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_120.DTA,88125580
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_120.TXT,807743
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_135.DTA,89809580
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_135.TXT,823187
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_15.DTA,16918236
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_15.TXT,154605
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_150.DTA,130028672
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_150.TXT,1192127
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_165.DTA,152282956
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_165.TXT,1396067
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_180.DTA,94228580
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_180.TXT,863711
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_195.DTA,95725656
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_195.TXT,877571
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_214.DTA,97553720
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_214.TXT,894203
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_30.DTA,18329368
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_30.TXT,167673
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_45.DTA,38020068
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_45.TXT,348381
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_60.DTA,53997350
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_60.TXT,494769
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_75.DTA,74739594
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_75.TXT,684981
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_90.DTA,76293614
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_90.TXT,699237
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_CHF.DTA,89466432
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/AE/SS_AE_Sensor_Polished MC_CHF.TXT,819891
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_0.lvm,12234409
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_105.lvm,12330414
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_120.lvm,12506928
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_135.lvm,12550502
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_15.lvm,12015953
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_150.lvm,17739406
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_165.lvm,20686761
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_180.lvm,12541597
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_195.lvm,12697152
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_214.lvm,13101425
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_30.lvm,12872072
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_45.lvm,12130682
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_60.lvm,12333195
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_75.lvm,13405973
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_90.lvm,11471264
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Hydrophone/SS_Hydrophone_Polished MC_CHF.lvm,17433123
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_0.lvm,28568532
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_105.lvm,29694932
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_120.lvm,30006221
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_135.lvm,30006228
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_15.lvm,29539284
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_150.lvm,42302420
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_165.lvm,49150932
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_180.lvm,29772756
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_195.lvm,30006228
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_214.lvm,30940116
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_30.lvm,31718356
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_45.lvm,29850580
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_60.lvm,30161876
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_75.lvm,32574420
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_90.lvm,27749332
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Temperature/SS_Temperature_Polished MC_CHF.lvm,42613716
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_105.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_120.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_135.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_15.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_150.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_165.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_180.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_195.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_214.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_30.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_45.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_60.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_75.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_90.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Steady State/Polished MC_B114/Videos/SS_Images_Polished MC_CHF.cine,624670828
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH0_B70/Acoustic.DTA,45027081
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH0_B70/Tr_AE_Sensor_PH0_CHF.TXT,1487379
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH0_B70/Tr_Hydrophone_PH0_CHF.lvm,198260091
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH0_B70/Tr_Temperature_PH0_CHF.lvm,474852806
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH10_B84/Acoustic_84.DTA,28145625
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH10_B84/Tr_AE_Sensor_PH10_CHF.TXT,929034
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH10_B84/Tr_Hydrophone_PH10_CHF.lvm,35950418
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH10_B84/Tr_Temperature_PH10_CHF.lvm,126630634
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH12_B82/Acoustic_82.DTA,15839807
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH12_B82/Tr_AE_Sensor_PH12_CHF.TXT,522003
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH12_B82/Tr_Hydrophone_PH12_CHF.lvm,135099289
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/PH12_B82/Tr_Temperature_PH12_CHF.lvm,475103672
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/Polished Cu_B79/Tr_AE_Sensor_Polished_Copper_CHF.TXT,56733
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/Polished Cu_B79/Tr_Hydrophone_Polished_Copper_CHF.lvm,191551805
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/Polished Cu_B79/Tr_Temperature_Polished_Copper_CHF.lvm,475693642
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/Polished MC_B119/Tr_AE_Sensor_Polished MC_CHF.TXT,3928742
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/Polished MC_B119/Tr_Hydrophone_Polished MC_CHF.lvm,17627364
+data/raw_archives/ned3-007_MultimodalBoilingData/Dataset/Transient/Polished MC_B119/Tr_Temperature_Polished MC_CHF.lvm,42976550
+data/raw_archives/ned3-007_MultimodalBoilingData/~$ndey_2023_Data in Brief_HP.docx,162

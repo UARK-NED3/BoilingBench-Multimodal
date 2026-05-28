@@ -8,7 +8,7 @@ Place raw archives in `data/raw_archives/` before creating the Zenodo deposit. E
 - `Z:/ned3-005_Hit2Flux.zip`
 - `Z:/ned3-006_BoilingImageSequence.zip`
 
-For `ned3-007`, create an archive from `Z:/ned3_007_MultimodalBoilingData` or upload the folder structure directly if Zenodo upload tooling supports it.
+For `ned3-007`, the folder structure is staged directly at `data/raw_archives/ned3-007_MultimodalBoilingData`. Upload the folder contents directly if your Zenodo workflow supports bulk upload, or create and verify a separate archive before upload.
 
 After staging, run:
 
