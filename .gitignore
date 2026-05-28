@@ -1,0 +1,12 @@
+# Raw benchmark archives are for Zenodo/Dataverse, not Git history
+data/raw_archives/
+data/**/*.zip
+data/**/*.7z
+data/**/*.tar
+data/**/*.tar.gz
+
+# Local generated files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

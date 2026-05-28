@@ -1,0 +1,5 @@
+﻿"dataset_id","path","bytes","sha256","notes"
+"ned3-004","data/raw_archives/ned3-004_BoilingAcousticsHydrophone.zip","9595371605","006542fd0e32ce1b43d948f93c9623824a89972b7937dbf283870847f48a029c","staged raw archive for Zenodo"
+"ned3-005","data/raw_archives/ned3-005_Hit2Flux.zip","874887705","a051cc03f6cb78b876dc9ddbbe6c37ffa418a6877dd352962a55663d3124795f","staged raw archive for Zenodo"
+"ned3-006","data/raw_archives/ned3-006_BoilingImageSequence.zip","4507484521","a3f72eef340382abc11e1661e552e5272fe6eafad729413d555269c10a3adb55","staged raw archive for Zenodo"
+"ned3-007","Z:/ned3_007_MultimodalBoilingData","66753528533","","not copied; 66.8 GB folder source, create/archive separately for Zenodo"

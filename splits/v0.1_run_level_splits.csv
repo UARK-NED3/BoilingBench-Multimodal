@@ -1,0 +1,27 @@
+dataset_id,run_id,split,task,notes
+ned3-004,Boiling-32,train,acoustic_heat_flux_regression,single-run starter case; use internal chronological split only for tutorial baseline
+ned3-005,Boiling-124a,train,ae_hit_heat_flux_regression,AE/hydrophone/pressure/temperature
+ned3-005,Boiling-124b,validation,ae_hit_heat_flux_regression,paired run held out for validation
+ned3-005,Boiling-125,test,ae_hit_heat_flux_regression,run-held-out test
+ned3-005,Boiling-126,test,ae_hit_heat_flux_regression,run-held-out test
+ned3-006,Boiling-87,train,image_sequence_heat_flux_regression,video/hydrophone/temperature
+ned3-006,Boiling-89,train,image_sequence_heat_flux_regression,video/hydrophone/temperature
+ned3-006,Boiling-90,validation,image_sequence_heat_flux_regression,video-held-out validation
+ned3-006,Boiling-91,test,image_sequence_heat_flux_regression,video-held-out test
+ned3-006,Boiling-92,test,image_sequence_heat_flux_regression,video-held-out test
+ned3-006,Boiling-93,train,image_sequence_heat_flux_regression,video/hydrophone/temperature
+ned3-006,Boiling-94,validation,image_sequence_heat_flux_regression,video-held-out validation
+ned3-006,Boiling-96a,train,image_sequence_heat_flux_regression,variant group 96
+ned3-006,Boiling-96b,validation,image_sequence_heat_flux_regression,variant group 96
+ned3-006,Boiling-96c,test,image_sequence_heat_flux_regression,variant group 96
+ned3-006,Boiling-96d,test,image_sequence_heat_flux_regression,variant group 96
+ned3-007,PH0_B69,train,multimodal_fusion,steady state
+ned3-007,PH10_B83,train,multimodal_fusion,steady state
+ned3-007,PH12_B81,validation,multimodal_fusion,steady state
+ned3-007,Polished Cu_B78,test,multimodal_fusion,steady state surface-held-out candidate
+ned3-007,Polished MC_B114,test,multimodal_fusion,steady state surface-held-out candidate
+ned3-007,PH0_B70,train,transition_regime_analysis,transient
+ned3-007,PH10_B84,validation,transition_regime_analysis,transient
+ned3-007,PH12_B82,test,transition_regime_analysis,transient
+ned3-007,Polished Cu_B79,test,transition_regime_analysis,transient surface-held-out candidate
+ned3-007,Polished MC_B119,test,transition_regime_analysis,transient surface-held-out candidate

@@ -1,0 +1,38 @@
+name: BoilingBench-Multimodal
+version: 0.1
+status: seed benchmark proposal
+maintainer: UARK-NED3
+repository: https://github.com/UARK-NED3/BoilingBench-Multimodal
+zenodo_doi: pending
+license: pending-confirmation-from-underlying-datasets
+s_t_d_classes:
+  - 0+1D acoustic time series
+  - 2+0D images
+  - 2+1D videos
+  - mixed S+TD multimodal records
+datasets:
+  - id: ned3-004
+    name: Boiling Acoustics Hydrophone
+    local_source: Z:/ned3-004_BoilingAcousticsHydrophone
+    archive_candidate: Z:/ned3-004_BoilingAcousticsHydrophone.zip
+    tracks: [acoustic_heat_flux_regression]
+  - id: ned3-005
+    name: Hit2Flux
+    local_source: Z:/ned3-005_Hit2Flux
+    archive_candidate: Z:/ned3-005_Hit2Flux.zip
+    tracks: [ae_hit_heat_flux_regression, acoustic_heat_flux_regression]
+  - id: ned3-006
+    name: Boiling Image Sequence
+    local_source: Z:/ned3-006_BoilingImageSequence
+    archive_candidate: Z:/ned3-006_BoilingImageSequence.zip
+    tracks: [image_sequence_heat_flux_regression, acoustic_heat_flux_regression]
+  - id: ned3-007
+    name: Multimodal Boiling Data
+    local_source: Z:/ned3_007_MultimodalBoilingData
+    archive_candidate: pending-local-archive
+    tracks: [multimodal_fusion, transition_regime_analysis]
+leakage_rules:
+  - Do not split adjacent windows from the same run across train, validation, and test.
+  - Report whether evaluation is random-window, run-held-out, surface-held-out, path-held-out, or dataset-held-out.
+  - Keep preprocessing parameters fit on training data only unless explicitly physical and fixed before splitting.
+  - Preserve raw-to-processed provenance for every sample.
