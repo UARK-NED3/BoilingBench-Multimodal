@@ -1,6 +1,6 @@
 name: BoilingBench-Multimodal
 version: 0.1
-status: seed benchmark proposal
+status: initial benchmark dataset documentation
 maintainer: UARK-NED3
 repository: https://github.com/UARK-NED3/BoilingBench-Multimodal
 zenodo_doi: pending
@@ -11,26 +11,34 @@ s_t_d_classes:
   - 2+1D videos
   - mixed S+TD multimodal records
 datasets:
-  - id: ned3-004
-    name: Boiling Acoustics Hydrophone
-    local_source: Z:/ned3-004_BoilingAcousticsHydrophone
-    archive_candidate: Z:/ned3-004_BoilingAcousticsHydrophone.zip
+  - id: BoilingBench-1
+    name: Ambient subcooled flat-Cu pool boiling
+    local_source: X:/ned3-016_BoilingBench-Multimodal/BoilingBench-1_Ambient_subcooled_flatCu_pool_boiling
+    tracks: [multimodal_fusion, heat_flux_regression, transition_regime_analysis]
+  - id: BoilingBench-2
+    name: Subatmospheric saturated flat-Cu pool boiling
+    local_source: X:/ned3-016_BoilingBench-Multimodal/BoilingBench-2_Subatmospheric_saturated_flatCu_pool_boiling
+    tracks: [multimodal_fusion, heat_flux_regression, transition_regime_analysis]
+  - id: BoilingBench-3
+    name: Ambient saturated Cu-foam pool boiling
+    local_source: X:/ned3-016_BoilingBench-Multimodal/BoilingBench-3_Ambient_saturated_CuFoam_pool_boiling
+    tracks: [multimodal_fusion, heat_flux_regression]
+  - id: BoilingBench-4
+    name: Ambient saturated flat-Cu pool boiling
+    local_source: X:/ned3-016_BoilingBench-Multimodal/BoilingBench-4_Ambient_saturated_flatCu_pool_boiling
+    tracks: [multimodal_fusion, heat_flux_regression]
+  - id: BoilingBench-5
+    name: Human-annotated boiling images
+    local_source: X:/ned3-016_BoilingBench-Multimodal/BoilingBench-5_Human_annotated_boiling_images
+    tracks: [image_sequence_heat_flux_regression, bubble_segmentation]
+  - id: BoilingBench-6
+    name: Single-modality hydrophone pool boiling
+    local_source: X:/ned3-016_BoilingBench-Multimodal/BoilingBench-6_Single-Ambient_saturated_flatCu_pool_boiling_hydrophone
     tracks: [acoustic_heat_flux_regression]
-  - id: ned3-005
-    name: Hit2Flux
-    local_source: Z:/ned3-005_Hit2Flux
-    archive_candidate: Z:/ned3-005_Hit2Flux.zip
-    tracks: [ae_hit_heat_flux_regression, acoustic_heat_flux_regression]
-  - id: ned3-006
-    name: Boiling Image Sequence
-    local_source: Z:/ned3-006_BoilingImageSequence
-    archive_candidate: Z:/ned3-006_BoilingImageSequence.zip
-    tracks: [image_sequence_heat_flux_regression, acoustic_heat_flux_regression]
-  - id: ned3-007
-    name: Multimodal Boiling Data
-    local_source: Z:/ned3_007_MultimodalBoilingData
-    archive_candidate: pending-local-archive
-    tracks: [multimodal_fusion, transition_regime_analysis]
+  - id: BoilingBench-7
+    name: Single-modality IR immersion cooling
+    local_source: "X:/ned3-016_BoilingBench-Multimodal/BoilingBench-7_Single-Closed_saturated_HFE&Water_immersion_IR"
+    tracks: [ir_temperature_regression, transition_regime_analysis]
 leakage_rules:
   - Do not split adjacent windows from the same run across train, validation, and test.
   - Report whether evaluation is random-window, run-held-out, surface-held-out, path-held-out, or dataset-held-out.
