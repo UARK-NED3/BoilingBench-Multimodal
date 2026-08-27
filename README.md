@@ -30,6 +30,15 @@ Supported tasks include heat-flux regression, regime/transition classification, 
 
 ## Release, citation, and licensing
 
+This benchmark is the data-and-task layer in the NED³ AI-for-thermal
+ecosystem. [Thermal AI Commons](https://github.com/UARK-NED3/Thermal-AI-Commons)
+provides shared contracts, synchronization/provenance records, compatibility
+pinning, benchmark splits, and evidence reports; [BoilingLab](https://github.com/UARK-NED3/BoilingLab),
+[BubbleID](https://github.com/cldunlap73/BubbleID),
+[BubbleID-Flow](https://github.com/UARK-NED3/BubbleID-Flow), and
+[SeqReg](https://github.com/cldunlap73/SeqReg) remain independently released
+processing, feature-extraction, and sequence-learning components.
+
 The public Lite data snapshot is distributed through Hugging Face and archived on Zenodo. The control-plane release below binds the three records together:
 
 - **GitHub control repository/release:** [`v0.1.0`](https://github.com/UARK-NED3/BoilingBench-Multimodal/releases/tag/v0.1.0)
