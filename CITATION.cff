@@ -1,11 +1,16 @@
 ﻿cff-version: 1.2.0
 title: BoilingBench-Multimodal
 type: dataset
-message: "If you use this seed benchmark, please cite the versioned Zenodo DOI after upload and the underlying NED3 datasets."
+message: "If you use this benchmark, please cite the versioned Zenodo DOI, the corresponding GitHub release, and the underlying NED3 datasets."
 authors:
   - family-names: Hu
     given-names: Han
 repository-code: "https://github.com/UARK-NED3/BoilingBench-Multimodal"
-version: "0.1"
-date-released: "2026-05-28"
-abstract: "Seed benchmark control package for multimodal machine learning with two-phase boiling datasets."
+version: "0.1.0"
+date-released: "2026-08-27"
+abstract: "Versioned benchmark control package for multimodal machine learning with two-phase boiling and thermal-management datasets. The associated Lite data snapshot is archived at https://doi.org/10.5281/zenodo.22131859 and distributed through https://huggingface.co/datasets/hanhuark/BoilingBench-Multimodal."
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22131859"
+  - type: url
+    value: "https://huggingface.co/datasets/hanhuark/BoilingBench-Multimodal"

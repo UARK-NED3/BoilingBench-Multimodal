@@ -30,6 +30,14 @@ Supported tasks include heat-flux regression, regime/transition classification, 
 
 ## Release, citation, and licensing
 
-Use identical GitHub and Hugging Face tags. The initial seed release should be `v0.1.0`; keep versions out of the repository name. Record commit, data revision, checksums, processing-code version, and DOI in every release. Cite the applicable publication(s), archival DOI, and this benchmark release; do not present in-preparation manuscripts as published.
+The public Lite data snapshot is distributed through Hugging Face and archived on Zenodo. The control-plane release below binds the three records together:
+
+- **GitHub control repository/release:** [`v0.1.0`](https://github.com/UARK-NED3/BoilingBench-Multimodal/releases/tag/v0.1.0)
+- **Hugging Face data profile:** [BoilingBench-Multimodal](https://huggingface.co/datasets/hanhuark/BoilingBench-Multimodal)
+- **Zenodo archival record:** [BoilingBench-Multimodal Lite v0.1.0](https://zenodo.org/records/22131859), DOI [`10.5281/zenodo.22131859`](https://doi.org/10.5281/zenodo.22131859)
+
+The Zenodo record is the citable archival snapshot; Hugging Face is the ML-facing distribution endpoint; GitHub contains the benchmark cards, schemas, manifests, split rules, tasks, and reproducibility documentation. The Lite profile omits original `.cine` recordings, as documented by its omission manifest. Verify the exact Hugging Face commit/revision and checksums listed in the Zenodo record before treating the links as byte-identical.
+
+Use identical `v0.1.0` tags for GitHub and Hugging Face when the corresponding Hugging Face tag is created. Record the commit, data revision, checksums, processing-code version, and DOI in every release. Cite the applicable publication(s), archival DOI, and this benchmark release; do not present in-preparation manuscripts as published.
 
 The dataset license remains subject to a rights audit. CC BY 4.0 is recommended after redistribution rights are confirmed; software remains separately licensed. Preserve more restrictive third-party terms.
