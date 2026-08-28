@@ -1,0 +1,712 @@
+{
+  "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "generated_utc": "2026-08-28T16:07:08.027739+00:00",
+  "cases": [
+    {
+      "dataset": "BB-1",
+      "status": "pass",
+      "errors": [],
+      "warnings": [
+        "microphone band-power export is absent",
+        "continuous AE is represented by processed band-power; raw waveform arrays are not audited",
+        "processed heat flux and chf_proxy are not confirmed CHF labels"
+      ],
+      "files": {
+        "summary.json": {
+          "bytes": 7252,
+          "sha256": "435d4eeaef580177bc8d68e0acb8ecdf0495c63282e12d4b03de9c945770a1cb"
+        },
+        "critical_events.csv": {
+          "bytes": 480,
+          "sha256": "f3ab498b7415613d678f1d1971dfcf2ae4a63f329be7e1d5c423a6e5a9ae80ba"
+        },
+        "time_alignment.json": {
+          "bytes": 4572,
+          "sha256": "8acb523c8dc481611cf5e3d677028fd79a04f76f0f4a0599eb2f7303a703346e"
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "bytes": 6048306,
+          "sha256": "e3c7461ad421a39a04ea63ba7efe8f36df977bb721645538da827f732ba77ef3"
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "bytes": 185391,
+          "sha256": "ed8dcd1eb995ddec0e6eb84fe4fcff4095e441e184da21191ea10c68fc1f880a"
+        },
+        "thermal_timeseries.npz": {
+          "bytes": 251373,
+          "sha256": "5d09906ffa65ade1e093c934a0f56f9376fe5587f778b491547f26d71d968dab"
+        },
+        "ae_wfs_band_integrated_power.csv": {
+          "bytes": 133158,
+          "sha256": "32bccb74639519d1089648dc7f730ba36a54498fc0600c66d6c201fabe37782f"
+        },
+        "ae_wfs_channel_1_metadata.json": {
+          "bytes": 1510,
+          "sha256": "9e5ac4f4be7ed189cbe84c7209f5817aa4744bdd37ffe190d41d9dda98f56230"
+        }
+      },
+      "arrays": {
+        "keys": [
+          "time_reference_temperature_s",
+          "thermocouple_1_C",
+          "thermocouple_2_C",
+          "thermocouple_3_C",
+          "thermocouple_4_C",
+          "surface_temperature_C",
+          "heat_flux_W_cm2",
+          "linear_temperature_fit_R2",
+          "saturation_temperature_C",
+          "wall_superheat_C",
+          "heat_transfer_coefficient_W_cm2K",
+          "htc_valid_for_positive_wall_superheat",
+          "pressure_kPa_interpolated",
+          "dc_power_W_interpolated"
+        ],
+        "lengths": {
+          "time_reference_temperature_s": 9890,
+          "thermocouple_1_C": 9890,
+          "thermocouple_2_C": 9890,
+          "thermocouple_3_C": 9890,
+          "thermocouple_4_C": 9890,
+          "surface_temperature_C": 9890,
+          "heat_flux_W_cm2": 9890,
+          "linear_temperature_fit_R2": 9890,
+          "saturation_temperature_C": 9890,
+          "wall_superheat_C": 9890,
+          "heat_transfer_coefficient_W_cm2K": 9890,
+          "htc_valid_for_positive_wall_superheat": 9890,
+          "pressure_kPa_interpolated": 9890,
+          "dc_power_W_interpolated": 9890
+        },
+        "samples": 9890,
+        "duration_s": 988.9,
+        "median_dt_s": 0.10000000000002274
+      },
+      "csvs": {
+        "critical_events.csv": {
+          "rows": 6,
+          "columns": [
+            "event_name",
+            "time_reference_temperature_s",
+            "definition",
+            "evidence_status"
+          ]
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "rows": 61864,
+          "columns": [
+            "ID",
+            "AE_Hit_Time",
+            "PARA1",
+            "CH",
+            "RISE",
+            "COUN",
+            "ENER",
+            "DURATION",
+            "A-FRQ",
+            "RMS",
+            "PCNTS",
+            "THR",
+            "R-FRQ",
+            "I-FRQ",
+            "SIG-STRNGTH",
+            "ABS-ENERGY",
+            "FRQ-C",
+            "P-FRQ",
+            "AMP",
+            "ASL"
+          ]
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "rows": 3089,
+          "columns": [
+            "Time (s)",
+            "Band-integrated hydrophone power proxy (V^2)",
+            "Band-integrated hydrophone power proxy (dB re V^2)"
+          ]
+        },
+        "ae_wfs_band_integrated_power.csv": {
+          "rows": 2400,
+          "columns": [
+            "Time (s)",
+            "Band-integrated AE waveform power proxy (V^2)",
+            "Band-integrated AE waveform power proxy (dB re V^2)"
+          ]
+        }
+      },
+      "events": [
+        {
+          "event_name": "dnb_proxy",
+          "time_reference_temperature_s": 124.8,
+          "definition": "algorithmic_sudden_heat_flux_drop",
+          "evidence_status": "screening"
+        },
+        {
+          "event_name": "surface_temperature_peak",
+          "time_reference_temperature_s": 132.4,
+          "definition": "maximum_surface_temperature_within_search_window",
+          "evidence_status": "derived"
+        },
+        {
+          "event_name": "chf_proxy",
+          "time_reference_temperature_s": 100.0,
+          "definition": "fixed_window_heat_flux_marker",
+          "evidence_status": "not_confirmed"
+        },
+        {
+          "event_name": "nbr_proxy",
+          "time_reference_temperature_s": 608.4,
+          "definition": "post-marker_heat_flux_maximum",
+          "evidence_status": "screening"
+        },
+        {
+          "event_name": "dc_power_start",
+          "time_reference_temperature_s": 5.227982,
+          "definition": "first_nonzero_dc_power_sample",
+          "evidence_status": "derived"
+        },
+        {
+          "event_name": "dc_power_shutoff",
+          "time_reference_temperature_s": 673.893438,
+          "definition": "first_near_zero_dc_power_sample_after_start",
+          "evidence_status": "derived"
+        }
+      ],
+      "modalities": {
+        "thermal": true,
+        "hydrophone": true,
+        "microphone": false,
+        "ae_hits": true,
+        "continuous_ae_waveform": true
+      },
+      "summary_fields": {
+        "test_id": "BoilingBench-1",
+        "analysis_mode": "subcooled",
+        "duration_s": 988.9,
+        "chf_event_status": "not_confirmed",
+        "max_heat_flux_W_cm2": 277.95529029921306
+      }
+    },
+    {
+      "dataset": "BB-2",
+      "status": "pass",
+      "errors": [],
+      "warnings": [
+        "microphone band-power export is absent",
+        "continuous AE is represented by processed band-power; raw waveform arrays are not audited",
+        "processed heat flux and chf_proxy are not confirmed CHF labels"
+      ],
+      "files": {
+        "summary.json": {
+          "bytes": 6068,
+          "sha256": "8b395ae44dd247229ed22054339ffd62076ba3fb7a5a17920df73d6bfba7bfee"
+        },
+        "critical_events.csv": {
+          "bytes": 478,
+          "sha256": "8da42cbfc6019ec03726e3d8f34f56ffe31b35562946f9f77564ea5c6ddf43d8"
+        },
+        "time_alignment.json": {
+          "bytes": 4656,
+          "sha256": "739a037b7ae4d35c4082bce0d46fb496fe28debd5d9770df6e556991c6aac8fd"
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "bytes": 9609677,
+          "sha256": "e0a002829028f0ca49831a231a7e82c4b20530823cde786490ee8b134338eb4c"
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "bytes": 296508,
+          "sha256": "2d6783dfb9c2aa4397c3935ed6798d9309093d74481b0c109ce439f57c17dc7a"
+        },
+        "thermal_timeseries.npz": {
+          "bytes": 394475,
+          "sha256": "807d3ee20ce8d492088fbdf1b473d7bba83a1fde513ae90e99e33c0530a8d362"
+        },
+        "ae_wfs_band_integrated_power.csv": {
+          "bytes": 134446,
+          "sha256": "f30c3481b376cf4de134b960675eb4795b7c10e7f2d1da5375f948c4f1b1f940"
+        },
+        "ae_wfs_channel_1_metadata.json": {
+          "bytes": 1531,
+          "sha256": "9cbf0020525825a031099587204431db24db55fee2ed619847302ee803868d72"
+        }
+      },
+      "arrays": {
+        "keys": [
+          "time_reference_temperature_s",
+          "thermocouple_1_C",
+          "thermocouple_2_C",
+          "thermocouple_3_C",
+          "thermocouple_4_C",
+          "surface_temperature_C",
+          "heat_flux_W_cm2",
+          "linear_temperature_fit_R2",
+          "saturation_temperature_C",
+          "wall_superheat_C",
+          "heat_transfer_coefficient_W_cm2K",
+          "htc_valid_for_positive_wall_superheat",
+          "pressure_kPa_interpolated",
+          "dc_power_W_interpolated"
+        ],
+        "lengths": {
+          "time_reference_temperature_s": 15570,
+          "thermocouple_1_C": 15570,
+          "thermocouple_2_C": 15570,
+          "thermocouple_3_C": 15570,
+          "thermocouple_4_C": 15570,
+          "surface_temperature_C": 15570,
+          "heat_flux_W_cm2": 15570,
+          "linear_temperature_fit_R2": 15570,
+          "saturation_temperature_C": 15570,
+          "wall_superheat_C": 15570,
+          "heat_transfer_coefficient_W_cm2K": 15570,
+          "htc_valid_for_positive_wall_superheat": 15570,
+          "pressure_kPa_interpolated": 15570,
+          "dc_power_W_interpolated": 15570
+        },
+        "samples": 15570,
+        "duration_s": 1556.9,
+        "median_dt_s": 0.10000000000002274
+      },
+      "csvs": {
+        "critical_events.csv": {
+          "rows": 6,
+          "columns": [
+            "event_name",
+            "time_reference_temperature_s",
+            "definition",
+            "evidence_status"
+          ]
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "rows": 96471,
+          "columns": [
+            "ID",
+            "AE_Hit_Time",
+            "PARA1",
+            "CH",
+            "RISE",
+            "COUN",
+            "ENER",
+            "DURATION",
+            "A-FRQ",
+            "RMS",
+            "PCNTS",
+            "THR",
+            "R-FRQ",
+            "I-FRQ",
+            "SIG-STRNGTH",
+            "ABS-ENERGY",
+            "FRQ-C",
+            "P-FRQ",
+            "AMP",
+            "ASL"
+          ]
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "rows": 4867,
+          "columns": [
+            "Time (s)",
+            "Band-integrated hydrophone power proxy (V^2)",
+            "Band-integrated hydrophone power proxy (dB re V^2)"
+          ]
+        },
+        "ae_wfs_band_integrated_power.csv": {
+          "rows": 2400,
+          "columns": [
+            "Time (s)",
+            "Band-integrated AE waveform power proxy (V^2)",
+            "Band-integrated AE waveform power proxy (dB re V^2)"
+          ]
+        }
+      },
+      "events": [
+        {
+          "event_name": "dnb_proxy",
+          "time_reference_temperature_s": 127.2,
+          "definition": "algorithmic_sudden_heat_flux_drop",
+          "evidence_status": "screening"
+        },
+        {
+          "event_name": "surface_temperature_peak",
+          "time_reference_temperature_s": 250.0,
+          "definition": "maximum_surface_temperature_within_search_window",
+          "evidence_status": "derived"
+        },
+        {
+          "event_name": "chf_proxy",
+          "time_reference_temperature_s": 99.2,
+          "definition": "fixed_window_heat_flux_marker",
+          "evidence_status": "not_confirmed"
+        },
+        {
+          "event_name": "nbr_proxy",
+          "time_reference_temperature_s": 301.2,
+          "definition": "post-marker_heat_flux_maximum",
+          "evidence_status": "screening"
+        },
+        {
+          "event_name": "dc_power_start",
+          "time_reference_temperature_s": 5.016396,
+          "definition": "first_nonzero_dc_power_sample",
+          "evidence_status": "derived"
+        },
+        {
+          "event_name": "dc_power_shutoff",
+          "time_reference_temperature_s": 570.05752,
+          "definition": "first_near_zero_dc_power_sample_after_start",
+          "evidence_status": "derived"
+        }
+      ],
+      "modalities": {
+        "thermal": true,
+        "hydrophone": true,
+        "microphone": false,
+        "ae_hits": true,
+        "continuous_ae_waveform": true
+      },
+      "summary_fields": {
+        "test_id": "BoilingBench-2",
+        "analysis_mode": "transient",
+        "duration_s": 1556.9,
+        "chf_event_status": "not_confirmed",
+        "max_heat_flux_W_cm2": 43.337305354330525
+      }
+    },
+    {
+      "dataset": "BB-3",
+      "status": "pass",
+      "errors": [],
+      "warnings": [
+        "continuous AE waveform feature export is absent from this case",
+        "processed heat flux and chf_proxy are not confirmed CHF labels"
+      ],
+      "files": {
+        "summary.json": {
+          "bytes": 6041,
+          "sha256": "cae7596d319fd17359e3e9ad3f07529ff30f76dbdf75c74974443a78e1b377f5"
+        },
+        "critical_events.csv": {
+          "bytes": 354,
+          "sha256": "e8e87e5d92601230675161310bebce96c037400a0a75373bdb4a2c903af05c3a"
+        },
+        "time_alignment.json": {
+          "bytes": 4733,
+          "sha256": "ebc8adbc2615da27f0666cfec9fdf3f0496be1720585036239efc5c5fa6ab3d7"
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "bytes": 713254,
+          "sha256": "463d9f57a2935ef8bcca4397f44c299621a59015c89ba74e2fd282bdd03d41ce"
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "bytes": 22948,
+          "sha256": "e79a4425e5fabd52d16bd18b84ed4ab2f4e28dc7af541b0042e39dd88f1fc5ea"
+        },
+        "thermal_timeseries.npz": {
+          "bytes": 9570839,
+          "sha256": "2bf431e5c50bb8a9518610668cca7ffcbac660a65e6b2187a39471db2fcc04be"
+        },
+        "microphone_band_integrated_power.csv": {
+          "bytes": 24831,
+          "sha256": "f889e73c7ef7b5dcd90957b879eabcf79c43a9688c44fa217e6138f13fa4ce17"
+        }
+      },
+      "arrays": {
+        "keys": [
+          "time_reference_temperature_s",
+          "thermocouple_1_C",
+          "thermocouple_2_C",
+          "thermocouple_3_C",
+          "thermocouple_4_C",
+          "surface_temperature_C",
+          "heat_flux_W_cm2",
+          "linear_temperature_fit_R2",
+          "saturation_temperature_C",
+          "wall_superheat_C",
+          "heat_transfer_coefficient_W_cm2K",
+          "htc_valid_for_positive_wall_superheat",
+          "pressure_kPa_interpolated",
+          "dc_power_W_interpolated"
+        ],
+        "lengths": {
+          "time_reference_temperature_s": 1674672,
+          "thermocouple_1_C": 1674672,
+          "thermocouple_2_C": 1674672,
+          "thermocouple_3_C": 1674672,
+          "thermocouple_4_C": 1674672,
+          "surface_temperature_C": 1674672,
+          "heat_flux_W_cm2": 1674672,
+          "linear_temperature_fit_R2": 1674672,
+          "saturation_temperature_C": 1674672,
+          "wall_superheat_C": 1674672,
+          "heat_transfer_coefficient_W_cm2K": 1674672,
+          "htc_valid_for_positive_wall_superheat": 1674672,
+          "pressure_kPa_interpolated": 1674672,
+          "dc_power_W_interpolated": 1674672
+        },
+        "samples": 1674672,
+        "duration_s": 555.990772,
+        "median_dt_s": 0.000332000000000221
+      },
+      "csvs": {
+        "critical_events.csv": {
+          "rows": 4,
+          "columns": [
+            "event_name",
+            "time_reference_temperature_s",
+            "definition",
+            "evidence_status"
+          ]
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "rows": 13461,
+          "columns": [
+            "ID",
+            "AE_Hit_Time",
+            "PARA1",
+            "CH",
+            "RISE",
+            "COUN",
+            "ENER",
+            "DURATION",
+            "A-FRQ",
+            "RMS",
+            "PCNTS",
+            "THR",
+            "R-FRQ",
+            "I-FRQ",
+            "SIG-STRNGTH",
+            "ABS-ENERGY",
+            "FRQ-C",
+            "P-FRQ",
+            "AMP",
+            "ASL"
+          ]
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "rows": 407,
+          "columns": [
+            "Time (s)",
+            "Band-integrated hydrophone power proxy (V^2)",
+            "Band-integrated hydrophone power proxy (dB re V^2)"
+          ]
+        },
+        "microphone_band_integrated_power.csv": {
+          "rows": 409,
+          "columns": [
+            "Time (s)",
+            "Band-integrated microphone power proxy (V^2)",
+            "Band-integrated microphone power proxy (dB re V^2)"
+          ]
+        }
+      },
+      "events": [
+        {
+          "event_name": "dnb_proxy",
+          "time_reference_temperature_s": 97.629912,
+          "definition": "algorithmic_sudden_heat_flux_drop",
+          "evidence_status": "screening"
+        },
+        {
+          "event_name": "surface_temperature_peak",
+          "time_reference_temperature_s": 115.126312,
+          "definition": "maximum_surface_temperature_within_search_window",
+          "evidence_status": "derived"
+        },
+        {
+          "event_name": "chf_proxy",
+          "time_reference_temperature_s": 97.629912,
+          "definition": "fixed_window_heat_flux_marker",
+          "evidence_status": "not_confirmed"
+        },
+        {
+          "event_name": "nbr_proxy",
+          "time_reference_temperature_s": 314.585272,
+          "definition": "post-marker_heat_flux_maximum",
+          "evidence_status": "screening"
+        }
+      ],
+      "modalities": {
+        "thermal": true,
+        "hydrophone": true,
+        "microphone": true,
+        "ae_hits": true,
+        "continuous_ae_waveform": false
+      },
+      "summary_fields": {
+        "test_id": "BoilingBench-3",
+        "analysis_mode": "saturated",
+        "duration_s": 555.990772,
+        "chf_event_status": "not_confirmed",
+        "max_heat_flux_W_cm2": 165.3928637795267
+      }
+    },
+    {
+      "dataset": "BB-4",
+      "status": "pass",
+      "errors": [],
+      "warnings": [
+        "continuous AE waveform feature export is absent from this case",
+        "processed heat flux and chf_proxy are not confirmed CHF labels"
+      ],
+      "files": {
+        "summary.json": {
+          "bytes": 6015,
+          "sha256": "7ff17290a6f264d436453bf18cf9997fde72c9cd3a57f19ff960a0591c85d807"
+        },
+        "critical_events.csv": {
+          "bytes": 354,
+          "sha256": "894f1ac3fb7a2e05c0fbd2614fead40fdbb15b6d2fe3e1632e300b97f45c0ba8"
+        },
+        "time_alignment.json": {
+          "bytes": 4732,
+          "sha256": "c483866e6005bb86a98beac059ef43ff77bb0a9f1d2c0cfb3d57381e2dea2979"
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "bytes": 9105,
+          "sha256": "ff19fa50a13f7cba6947f11cca95a396546ac20ccd9a29c6b9c2f302dfa39948"
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "bytes": 16144,
+          "sha256": "efaa335afbc70f680cfb0b38a0e8e60d9a15b78757c9ebca0cefadb2500e9444"
+        },
+        "thermal_timeseries.npz": {
+          "bytes": 6658301,
+          "sha256": "4270fdf2a42ac4b6a2f4c3f17edbdd4344f80adeab4671d4ed8c4368305da8d8"
+        },
+        "microphone_band_integrated_power.csv": {
+          "bytes": 17201,
+          "sha256": "f751df747c09ff3bde9bfc70c99d99a48d64ac406b9003fc192bb63e525a05d9"
+        }
+      },
+      "arrays": {
+        "keys": [
+          "time_reference_temperature_s",
+          "thermocouple_1_C",
+          "thermocouple_2_C",
+          "thermocouple_3_C",
+          "thermocouple_4_C",
+          "surface_temperature_C",
+          "heat_flux_W_cm2",
+          "linear_temperature_fit_R2",
+          "saturation_temperature_C",
+          "wall_superheat_C",
+          "heat_transfer_coefficient_W_cm2K",
+          "htc_valid_for_positive_wall_superheat",
+          "pressure_kPa_interpolated",
+          "dc_power_W_interpolated"
+        ],
+        "lengths": {
+          "time_reference_temperature_s": 1162632,
+          "thermocouple_1_C": 1162632,
+          "thermocouple_2_C": 1162632,
+          "thermocouple_3_C": 1162632,
+          "thermocouple_4_C": 1162632,
+          "surface_temperature_C": 1162632,
+          "heat_flux_W_cm2": 1162632,
+          "linear_temperature_fit_R2": 1162632,
+          "saturation_temperature_C": 1162632,
+          "wall_superheat_C": 1162632,
+          "heat_transfer_coefficient_W_cm2K": 1162632,
+          "htc_valid_for_positive_wall_superheat": 1162632,
+          "pressure_kPa_interpolated": 1162632,
+          "dc_power_W_interpolated": 1162632
+        },
+        "samples": 1162632,
+        "duration_s": 385.993492,
+        "median_dt_s": 0.000332000000000221
+      },
+      "csvs": {
+        "critical_events.csv": {
+          "rows": 4,
+          "columns": [
+            "event_name",
+            "time_reference_temperature_s",
+            "definition",
+            "evidence_status"
+          ]
+        },
+        "ae_hit_parameters_aligned.csv": {
+          "rows": 174,
+          "columns": [
+            "ID",
+            "AE_Hit_Time",
+            "PARA1",
+            "CH",
+            "RISE",
+            "COUN",
+            "ENER",
+            "DURATION",
+            "A-FRQ",
+            "RMS",
+            "PCNTS",
+            "THR",
+            "R-FRQ",
+            "I-FRQ",
+            "SIG-STRNGTH",
+            "ABS-ENERGY",
+            "FRQ-C",
+            "P-FRQ",
+            "AMP",
+            "ASL"
+          ]
+        },
+        "hydrophone_band_integrated_power.csv": {
+          "rows": 283,
+          "columns": [
+            "Time (s)",
+            "Band-integrated hydrophone power proxy (V^2)",
+            "Band-integrated hydrophone power proxy (dB re V^2)"
+          ]
+        },
+        "microphone_band_integrated_power.csv": {
+          "rows": 282,
+          "columns": [
+            "Time (s)",
+            "Band-integrated microphone power proxy (V^2)",
+            "Band-integrated microphone power proxy (dB re V^2)"
+          ]
+        }
+      },
+      "events": [
+        {
+          "event_name": "dnb_proxy",
+          "time_reference_temperature_s": 98.679696,
+          "definition": "algorithmic_sudden_heat_flux_drop",
+          "evidence_status": "screening"
+        },
+        {
+          "event_name": "surface_temperature_peak",
+          "time_reference_temperature_s": 119.325448,
+          "definition": "maximum_surface_temperature_within_search_window",
+          "evidence_status": "derived"
+        },
+        {
+          "event_name": "chf_proxy",
+          "time_reference_temperature_s": 98.679696,
+          "definition": "fixed_window_heat_flux_marker",
+          "evidence_status": "not_confirmed"
+        },
+        {
+          "event_name": "nbr_proxy",
+          "time_reference_temperature_s": 298.679816,
+          "definition": "post-marker_heat_flux_maximum",
+          "evidence_status": "screening"
+        }
+      ],
+      "modalities": {
+        "thermal": true,
+        "hydrophone": true,
+        "microphone": true,
+        "ae_hits": true,
+        "continuous_ae_waveform": false
+      },
+      "summary_fields": {
+        "test_id": "BoilingBench-4",
+        "analysis_mode": "saturated",
+        "duration_s": 385.993492,
+        "chf_event_status": "not_confirmed",
+        "max_heat_flux_W_cm2": 88.64985240944894
+      }
+    }
+  ]
+}

@@ -9,7 +9,6 @@
     "tc_spread_C",
     "thermal_fit_R2",
     "hydrophone_db",
-    "microphone_db",
     "ae_hits"
   ],
   "target": "processed_heat_flux_W_cm2",
@@ -18,31 +17,65 @@
     {
       "train_dataset": "BB-4",
       "test_dataset": "BB-3",
-      "n_train": 280,
+      "n_train": 282,
       "n_test": 406,
-      "mae_W_cm2": 30.446515173751422,
-      "r2": 0.09482564629929036,
+      "mae_W_cm2": 16.399142056735275,
+      "r2": 0.5478532053163498,
       "train_only_scaling": true,
       "marker_metadata": {
         "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
         "chf_event_status": "not_confirmed",
         "screening_chf_proxy_time_s": 97.629912,
-        "continuous_ae_waveform": false
+        "continuous_ae_waveform": false,
+        "continuous_ae_waveform_product": false,
+        "available_modalities": {
+          "thermal": true,
+          "hydrophone": true,
+          "microphone": true,
+          "ae_hits": true,
+          "ae_waveform_processed": false
+        },
+        "required_features": [
+          "surface_temperature_C",
+          "wall_superheat_C",
+          "tc_spread_C",
+          "thermal_fit_R2",
+          "hydrophone_db",
+          "ae_hits"
+        ],
+        "bin_s": 1.36
       }
     },
     {
       "train_dataset": "BB-3",
       "test_dataset": "BB-4",
       "n_train": 406,
-      "n_test": 280,
-      "mae_W_cm2": 21.210641771133638,
-      "r2": 0.23070776393755954,
+      "n_test": 282,
+      "mae_W_cm2": 1.5781125705551948,
+      "r2": 0.991207517197088,
       "train_only_scaling": true,
       "marker_metadata": {
         "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
         "chf_event_status": "not_confirmed",
         "screening_chf_proxy_time_s": 98.679696,
-        "continuous_ae_waveform": false
+        "continuous_ae_waveform": false,
+        "continuous_ae_waveform_product": false,
+        "available_modalities": {
+          "thermal": true,
+          "hydrophone": true,
+          "microphone": true,
+          "ae_hits": true,
+          "ae_waveform_processed": false
+        },
+        "required_features": [
+          "surface_temperature_C",
+          "wall_superheat_C",
+          "tc_spread_C",
+          "thermal_fit_R2",
+          "hydrophone_db",
+          "ae_hits"
+        ],
+        "bin_s": 1.36
       }
     }
   ]

@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "baselines" / "chfwatch"))
-from current_data import BIN_S, FEATURES, HF_REVISION, load_processed_case  # noqa: E402
+from current_data import BIN_S, COMMON_FEATURES, HF_REVISION, load_processed_case  # noqa: E402
 
 
 def main() -> None:
@@ -22,13 +22,16 @@ def main() -> None:
     parser.add_argument("--data-root", type=Path, required=True, help="directory containing BB-3/ and BB-4/")
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
-    cases = {name: load_processed_case(args.data_root / name) for name in ("BB-3", "BB-4")}
+    cases = {
+        name: load_processed_case(args.data_root / name, required_features=COMMON_FEATURES)
+        for name in ("BB-3", "BB-4")
+    }
     result = {
         "baseline": "chfwatch-current-data",
         "protocol": "leave-one-dataset-out",
         "hf_revision": HF_REVISION,
         "bin_s": BIN_S,
-        "features": list(FEATURES),
+        "features": list(COMMON_FEATURES),
         "target": "processed_heat_flux_W_cm2",
         "target_status": "screening-level processed target; not a confirmed CHF label",
         "folds": [],
@@ -37,8 +40,8 @@ def main() -> None:
         train_name = next(name for name in cases if name != test_name)
         train, _ = cases[train_name]
         model = make_pipeline(StandardScaler(), Ridge(alpha=1.0))
-        model.fit(train[list(FEATURES)], train["heat_flux_W_cm2"])
-        prediction = model.predict(test[list(FEATURES)])
+        model.fit(train[list(COMMON_FEATURES)], train["heat_flux_W_cm2"])
+        prediction = model.predict(test[list(COMMON_FEATURES)])
         result["folds"].append({
             "train_dataset": train_name,
             "test_dataset": test_name,
