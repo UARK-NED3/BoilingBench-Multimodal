@@ -1,0 +1,36 @@
+name: chfwatch-reference-baseline
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # All four released BoilingBench baselines assume a CUDA-capable
+      # PyTorch. On Blackwell (sm_120) laptop GPUs the stable cu124 wheel
+      # only ships kernels up to sm_90, so use the cu128 nightly until a
+      # stable wheel supports sm_120 (see standalone repo README).
+      - --pre --index-url https://download.pytorch.org/whl/nightly/cu128
+      - torch
+      - torchvision
+      - torchaudio
+      # Core
+      - numpy
+      - pandas
+      - scipy
+      - scikit-learn
+      - matplotlib
+      - librosa
+      - soundfile
+      - h5py
+      - lightgbm
+      - pyyaml
+      - tqdm
+      - rich
+      # Uncertainty / calibration / conformal
+      - netcal
+      - mapie
+      - torch-uncertainty
+      # The reference baseline itself, pinned to the standalone release
+      # used for every number quoted here.
+      - git+https://gitlab.com/moore.brad.m-group/chf-watch.git@b86bf0d
