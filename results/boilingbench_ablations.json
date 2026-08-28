@@ -1,0 +1,1394 @@
+{
+  "baseline": "chfwatch-current-data-ablations",
+  "protocol": "leave-one-dataset-out; train on all other eligible datasets",
+  "contract_schema_version": "1.0",
+  "release": "v0.1.0",
+  "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "bin_s": 1.36,
+  "target": "processed_heat_flux_W_cm2",
+  "target_status": "screening-level processed target; not a confirmed CHF label",
+  "target_independent_physical_measurement": false,
+  "target_provenance_note": "The release describes heat flux as a derived analysis product; thermal features are co-derived from the same thermal series, so metrics are not independent physical validation.",
+  "target_not_used_as_feature": true,
+  "ablations": {
+    "time_only": {
+      "features": [
+        "time_s"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1838,
+          "n_test": 728,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "time_s"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.11925891321624,
+          "ridge_mae_W_cm2": 140.29413682902728,
+          "ridge_r2": -2.050893227248982
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1421,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "time_s"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 78.47994645327374,
+          "ridge_mae_W_cm2": 80.7089197828212,
+          "ridge_r2": -90.12019203191383
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2157,
+          "n_test": 409,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "time_s"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 49.92271775869234,
+          "ridge_mae_W_cm2": 65.13529542762261,
+          "ridge_r2": -2.416202849490522
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2282,
+          "n_test": 284,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "time_s"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 43.35144529221474,
+          "ridge_mae_W_cm2": 67.3511393404287,
+          "ridge_r2": -7.39865901625396
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 78.71834210434926,
+        "mean_ridge_mae_W_cm2": 88.37237284497495,
+        "median_ridge_mae_W_cm2": 74.03002956162496,
+        "mean_ridge_r2": -25.49648678122682
+      }
+    },
+    "thermal_only": {
+      "features": [
+        "surface_temperature_C",
+        "wall_superheat_C",
+        "tc_spread_C",
+        "thermal_fit_R2"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1838,
+          "n_test": 728,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.11925891321624,
+          "ridge_mae_W_cm2": 22.372361331733455,
+          "ridge_r2": 0.9228233194598624
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1421,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 78.47994645327374,
+          "ridge_mae_W_cm2": 17.357684397489425,
+          "ridge_r2": -3.1600077176905774
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2157,
+          "n_test": 409,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 49.92271775869234,
+          "ridge_mae_W_cm2": 4.563410682151028,
+          "ridge_r2": 0.9553237190326433
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2282,
+          "n_test": 284,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 43.35144529221474,
+          "ridge_mae_W_cm2": 3.6596097297948966,
+          "ridge_r2": 0.9535951037927677
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 78.71834210434926,
+        "mean_ridge_mae_W_cm2": 11.988266535292201,
+        "median_ridge_mae_W_cm2": 10.960547539820226,
+        "mean_ridge_r2": -0.08206639385132602
+      }
+    },
+    "hydrophone_only": {
+      "features": [
+        "hydrophone_db"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1833,
+          "n_test": 726,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.4447300382078,
+          "ridge_mae_W_cm2": 143.31439952248493,
+          "ridge_r2": -2.192607060422373
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1414,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 78.93648702298835,
+          "ridge_mae_W_cm2": 121.74663378049175,
+          "ridge_r2": -205.49033441705978
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2153,
+          "n_test": 406,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 49.90033693486321,
+          "ridge_mae_W_cm2": 90.4514230017885,
+          "ridge_r2": -5.654075644831175
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2277,
+          "n_test": 282,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 43.30894668570144,
+          "ridge_mae_W_cm2": 68.49717546074561,
+          "ridge_r2": -7.75009054121716
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 78.8976251704402,
+        "mean_ridge_mae_W_cm2": 106.0024079413777,
+        "median_ridge_mae_W_cm2": 106.09902839114012,
+        "mean_ridge_r2": -55.271776915882626
+      }
+    },
+    "ae_hits_only": {
+      "features": [
+        "ae_hits"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1838,
+          "n_test": 728,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.11925891321624,
+          "ridge_mae_W_cm2": 144.73904915546814,
+          "ridge_r2": -2.2295463899521226
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1421,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 78.47994645327374,
+          "ridge_mae_W_cm2": 119.43664640601105,
+          "ridge_r2": -196.3134606169113
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2157,
+          "n_test": 409,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 49.92271775869234,
+          "ridge_mae_W_cm2": 37.32266909641922,
+          "ridge_r2": -0.6008943566365121
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2282,
+          "n_test": 284,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 43.35144529221474,
+          "ridge_mae_W_cm2": 20.42336071450864,
+          "ridge_r2": -0.03292681269014763
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 78.71834210434926,
+        "mean_ridge_mae_W_cm2": 80.48043134310176,
+        "median_ridge_mae_W_cm2": 78.37965775121513,
+        "mean_ridge_r2": -49.79420704404752
+      }
+    },
+    "ae_waveform_only": {
+      "features": [
+        "ae_waveform_db"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1145,
+          "n_test": 728,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "ae_waveform_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 145.6420703422675,
+          "ridge_mae_W_cm2": 141.8660404920469,
+          "ridge_r2": -2.126109405768651
+        },
+        {
+          "train_datasets": [
+            "BB-1"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 728,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "ae_waveform_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.42091830756254,
+          "ridge_mae_W_cm2": 31.045228448057422,
+          "ridge_r2": -25.14770118211752
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 144.531494324915,
+        "mean_ridge_mae_W_cm2": 86.45563447005216,
+        "median_ridge_mae_W_cm2": 86.45563447005216,
+        "mean_ridge_r2": -13.636905293943085
+      }
+    },
+    "thermal_hydrophone": {
+      "features": [
+        "surface_temperature_C",
+        "wall_superheat_C",
+        "tc_spread_C",
+        "thermal_fit_R2",
+        "hydrophone_db"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1833,
+          "n_test": 726,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.4447300382078,
+          "ridge_mae_W_cm2": 22.70489924795272,
+          "ridge_r2": 0.9200664783544681
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1414,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 78.93648702298835,
+          "ridge_mae_W_cm2": 7.345296952457963,
+          "ridge_r2": 0.17360678950694808
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2153,
+          "n_test": 406,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 49.90033693486321,
+          "ridge_mae_W_cm2": 4.8844109915779175,
+          "ridge_r2": 0.9581253982813602
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2277,
+          "n_test": 282,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 43.30894668570144,
+          "ridge_mae_W_cm2": 3.7276462487638247,
+          "ridge_r2": 0.9597052481521076
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 78.8976251704402,
+        "mean_ridge_mae_W_cm2": 9.665563360188107,
+        "median_ridge_mae_W_cm2": 6.11485397201794,
+        "mean_ridge_r2": 0.7528759785737209
+      }
+    },
+    "thermal_hydrophone_ae_hits": {
+      "features": [
+        "surface_temperature_C",
+        "wall_superheat_C",
+        "tc_spread_C",
+        "thermal_fit_R2",
+        "hydrophone_db",
+        "ae_hits"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1833,
+          "n_test": 726,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.4447300382078,
+          "ridge_mae_W_cm2": 22.71988400617015,
+          "ridge_r2": 0.9199546440727976
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1414,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 78.93648702298835,
+          "ridge_mae_W_cm2": 6.992761180672922,
+          "ridge_r2": 0.2602836569544785
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2153,
+          "n_test": 406,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 49.90033693486321,
+          "ridge_mae_W_cm2": 5.391961581523147,
+          "ridge_r2": 0.9557245978259227
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2277,
+          "n_test": 282,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 43.30894668570144,
+          "ridge_mae_W_cm2": 5.100660827128374,
+          "ridge_r2": 0.9475875855236219
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 78.8976251704402,
+        "mean_ridge_mae_W_cm2": 10.051316898873647,
+        "median_ridge_mae_W_cm2": 6.192361381098035,
+        "mean_ridge_r2": 0.7708876210942052
+      }
+    },
+    "thermal_hydrophone_ae_waveform": {
+      "features": [
+        "surface_temperature_C",
+        "wall_superheat_C",
+        "tc_spread_C",
+        "thermal_fit_R2",
+        "hydrophone_db",
+        "ae_waveform_db"
+      ],
+      "eligible_datasets": [
+        "BB-1",
+        "BB-2"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1145,
+          "n_test": 726,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_waveform_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 146.01917905157362,
+          "ridge_mae_W_cm2": 1.6040526440086806,
+          "ridge_r2": 0.9996006129274516
+        },
+        {
+          "train_datasets": [
+            "BB-1"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 726,
+          "n_test": 1145,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_waveform_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 143.84012637139637,
+          "ridge_mae_W_cm2": 0.9599218434186618,
+          "ridge_r2": 0.9809573704370333
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 144.929652711485,
+        "mean_ridge_mae_W_cm2": 1.2819872437136712,
+        "median_ridge_mae_W_cm2": 1.2819872437136712,
+        "mean_ridge_r2": 0.9902789916822425
+      }
+    },
+    "thermal_hydrophone_microphone_ae_hits": {
+      "features": [
+        "surface_temperature_C",
+        "wall_superheat_C",
+        "tc_spread_C",
+        "thermal_fit_R2",
+        "hydrophone_db",
+        "ae_hits",
+        "microphone_db"
+      ],
+      "eligible_datasets": [
+        "BB-3",
+        "BB-4"
+      ],
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 280,
+          "n_test": 406,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits",
+              "microphone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 21.794165246044876,
+          "ridge_mae_W_cm2": 30.446515173751333,
+          "ridge_r2": 0.09482564629929313
+        },
+        {
+          "train_datasets": [
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 406,
+          "n_test": 280,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits",
+              "microphone_db"
+            ],
+            "bin_s": 1.36
+          },
+          "constant_mae_W_cm2": 20.026529216663917,
+          "ridge_mae_W_cm2": 21.21064177113325,
+          "ridge_r2": 0.23070776393758707
+        }
+      ],
+      "status": "exploratory",
+      "summary": {
+        "mean_constant_mae_W_cm2": 20.910347231354397,
+        "mean_ridge_mae_W_cm2": 25.82857847244229,
+        "median_ridge_mae_W_cm2": 25.82857847244229,
+        "mean_ridge_r2": 0.1627667051184401
+      }
+    }
+  },
+  "controls": {
+    "shuffled_target": {
+      "features": [
+        "surface_temperature_C",
+        "wall_superheat_C",
+        "tc_spread_C",
+        "thermal_fit_R2",
+        "hydrophone_db",
+        "ae_hits"
+      ],
+      "seed": 20260828,
+      "folds": [
+        {
+          "train_datasets": [
+            "BB-2",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-1",
+          "n_train": 1833,
+          "n_test": 726,
+          "shuffled_target_ridge_mae_W_cm2": 143.90702372314416,
+          "shuffled_target_ridge_r2": -2.208985241062452,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 100.0,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          }
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-3",
+            "BB-4"
+          ],
+          "test_dataset": "BB-2",
+          "n_train": 1414,
+          "n_test": 1145,
+          "shuffled_target_ridge_mae_W_cm2": 70.99647331004921,
+          "shuffled_target_ridge_r2": -69.82486166774788,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 99.2,
+            "continuous_ae_waveform": true,
+            "continuous_ae_waveform_product": true,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": false,
+              "ae_hits": true,
+              "ae_waveform_processed": true
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          }
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-4"
+          ],
+          "test_dataset": "BB-3",
+          "n_train": 2153,
+          "n_test": 406,
+          "shuffled_target_ridge_mae_W_cm2": 47.4235523908842,
+          "shuffled_target_ridge_r2": -0.9389439319237469,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 97.629912,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          }
+        },
+        {
+          "train_datasets": [
+            "BB-1",
+            "BB-2",
+            "BB-3"
+          ],
+          "test_dataset": "BB-4",
+          "n_train": 2277,
+          "n_test": 282,
+          "shuffled_target_ridge_mae_W_cm2": 42.14504615493454,
+          "shuffled_target_ridge_r2": -2.740666899834944,
+          "train_only_scaling": true,
+          "marker_metadata": {
+            "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+            "chf_event_status": "not_confirmed",
+            "screening_chf_proxy_time_s": 98.679696,
+            "continuous_ae_waveform": false,
+            "continuous_ae_waveform_product": false,
+            "available_modalities": {
+              "thermal": true,
+              "hydrophone": true,
+              "microphone": true,
+              "ae_hits": true,
+              "ae_waveform_processed": false
+            },
+            "required_features": [
+              "surface_temperature_C",
+              "wall_superheat_C",
+              "tc_spread_C",
+              "thermal_fit_R2",
+              "hydrophone_db",
+              "ae_hits"
+            ],
+            "bin_s": 1.36
+          }
+        }
+      ],
+      "status": "negative_control",
+      "summary": {
+        "mean_shuffled_target_ridge_mae_W_cm2": 76.11802389475304,
+        "mean_shuffled_target_ridge_r2": -18.928364435142257
+      }
+    }
+  }
+}
