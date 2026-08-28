@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071016" />
+    <meta name="description" content="A transparent results board for the BoilingBench GPU diagnostics: where visual and temporal transfer works, and where it fails." />
+    <meta property="og:title" content="BoilingBench Results Lab" />
+    <meta property="og:description" content="One verified public release. Two CUDA diagnostics. The failures stay visible." />
+    <title>BoilingBench Results Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="BoilingBench Results Lab home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>BoilingBench <b>Results Lab</b></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#visual">Visual</a>
+        <a href="#temporal">Temporal</a>
+        <a href="#next">Next</a>
+      </nav>
+      <a class="status-chip" href="#archive"><span class="status-dot"></span><span id="top-status">Loading release</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> CUDA EVIDENCE BOARD / 28 AUG 2026</p>
+          <h1 id="hero-title">What transfers.<br /><em>What doesn’t.</em></h1>
+          <p class="hero-lede">A clear-eyed readout from a complete public archive and two GPU diagnostics. Strong signals are marked green. Domain shift is marked red. Nothing gets hidden behind a pooled score.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#visual">Explore the results <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#next">See the research gap</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Decorative signal visualization">
+          <div class="hero-ring ring-one"></div>
+          <div class="hero-ring ring-two"></div>
+          <div class="hero-ring ring-three"></div>
+          <div class="hero-pulse pulse-one"></div>
+          <div class="hero-pulse pulse-two"></div>
+          <div class="hero-core"><span>GPU</span><strong>01</strong><small>LIVE EVIDENCE</small></div>
+          <div class="hero-label label-a">BASE TEST <b>+</b></div>
+          <div class="hero-label label-b">DOMAIN SHIFT <b>!</b></div>
+          <div class="hero-axis axis-x"></div>
+          <div class="hero-axis axis-y"></div>
+        </div>
+      </section>
+
+      <section class="shell" id="overview" aria-labelledby="overview-title">
+        <div class="section-kicker"><span>01</span><span class="section-rule"></span><span>RELEASE SNAPSHOT</span></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE GROUND TRUTH OF THIS PAGE</p>
+            <h2 id="overview-title">A finished data pass.<br /><em>An unfinished claim.</em></h2>
+          </div>
+          <p class="section-intro">The archive is complete and reproducible. The models are useful diagnostics, not a production alarm or a confirmed CHF detector.</p>
+        </div>
+        <div class="stat-grid">
+          <article class="stat-card stat-card-accent">
+            <div class="stat-label">ARCHIVE CHECK</div>
+            <div class="stat-value" id="archive-stat">—</div>
+            <div class="stat-detail" id="archive-detail">Waiting for manifest</div>
+            <div class="stat-meter"><span id="archive-meter"></span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-label">PUBLIC FILES</div>
+            <div class="stat-value" id="file-stat">—</div>
+            <div class="stat-detail">BB-1 through BB-7 release</div>
+            <div class="stat-glyph glyph-files" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-label">COMPUTE</div>
+            <div class="stat-value stat-value-small" id="gpu-stat">—</div>
+            <div class="stat-detail">CUDA / three seeds per run</div>
+            <div class="stat-glyph glyph-wave" aria-hidden="true"><span></span></div>
+          </article>
+          <article class="stat-card stat-card-warning">
+            <div class="stat-label">EVIDENCE LEVEL</div>
+            <div class="stat-value stat-value-small">DIAGNOSTIC</div>
+            <div class="stat-detail">Derived target · no confirmed event label</div>
+            <div class="warning-mark" aria-hidden="true">!</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="shell experiment-section" id="visual" aria-labelledby="visual-title">
+        <div class="section-kicker"><span>02</span><span class="section-rule"></span><span>EXPERIMENT A / IMAGE</span></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BUBBLE-AREA REGRESSION</p>
+            <h2 id="visual-title">The base split is real.<br /><em>Transfer is conditional.</em></h2>
+          </div>
+          <div class="experiment-meta"><span class="meta-label">TARGET</span><strong>Polygon bubble area fraction</strong><span class="meta-label">SPLIT</span><strong>Base Train → Base Test</strong></div>
+        </div>
+        <div class="callout callout-green">
+          <span class="callout-icon">↗</span>
+          <p><strong>In-domain signal:</strong> the model reduces base-test MAE from <b>0.0788</b> to <b>0.0187</b> across three seeds. New-facility transfer improves on the constant baseline, but flow-domain transfer fails.</p>
+        </div>
+        <div class="results-layout">
+          <div class="result-table-wrap">
+            <table class="result-table" id="visual-table">
+              <caption class="sr-only">Visual bubble-area regression results by evaluation domain</caption>
+              <thead><tr><th scope="col">Evaluation domain</th><th scope="col">N</th><th scope="col">Baseline MAE</th><th scope="col">Model MAE</th><th scope="col">Mean R²</th><th scope="col">Read</th></tr></thead>
+              <tbody><tr><td colspan="6" class="loading-row">Loading visual results…</td></tr></tbody>
+            </table>
+          </div>
+          <aside class="signal-card" id="visual-signal-card">
+            <div class="signal-card-top"><span class="mini-eyebrow">SIGNAL / BASE TEST</span><span class="signal-arrow">↗</span></div>
+            <div class="signal-number" id="visual-lift">—</div>
+            <p>lower MAE than constant baseline</p>
+            <div class="bar-pair" id="visual-bars"></div>
+            <div class="bar-legend"><span><i class="legend-dot dot-model"></i> model</span><span><i class="legend-dot dot-baseline"></i> baseline</span></div>
+          </aside>
+        </div>
+        <div class="domain-cards" id="visual-cards"></div>
+        <p class="footnote"><span>READ THIS CORRECTLY</span> The flow result is not a typo: the external annotation distribution is materially different from the base training distribution. A constant baseline is safer there. This target is derived from public human polygons, not a CHF label.</p>
+      </section>
+
+      <section class="shell experiment-section temporal-section" id="temporal" aria-labelledby="temporal-title">
+        <div class="section-kicker"><span>03</span><span class="section-rule"></span><span>EXPERIMENT B / TIME</span></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LEAVE-ONE-DATASET-OUT</p>
+            <h2 id="temporal-title">A model that sees<br /><em>the operating envelope.</em></h2>
+          </div>
+          <div class="experiment-meta"><span class="meta-label">INPUT</span><strong>4 thermocouples + pressure</strong><span class="meta-label">WINDOWS</span><strong>10 Hz · 128 samples</strong></div>
+        </div>
+        <div class="temporal-intro"><p>The held-out datasets do not behave alike. BB-3 and BB-4 carry transferable signal; BB-1 is baseline-level and BB-2 is unstable. That is the result.</p><span class="scale-note">MAE / W·cm<sup>−2</sup></span></div>
+        <div class="temporal-grid" id="temporal-grid"></div>
+        <div class="temporal-table-wrap">
+          <table class="result-table temporal-table" id="temporal-table">
+            <caption class="sr-only">Temporal heat-flux regression results by held-out dataset</caption>
+            <thead><tr><th scope="col">Held-out set</th><th scope="col">Windows</th><th scope="col">Baseline MAE</th><th scope="col">Model MAE</th><th scope="col">Mean R²</th><th scope="col">Read</th></tr></thead>
+            <tbody><tr><td colspan="6" class="loading-row">Loading temporal results…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="footnote"><span>READ THIS CORRECTLY</span> Sliding windows are not independent physical runs. Heat flux is a derived analysis product, so these numbers do not independently validate CHF physics.</p>
+      </section>
+
+      <section class="shell next-section" id="next" aria-labelledby="next-title">
+        <div class="section-kicker"><span>04</span><span class="section-rule"></span><span>THE RESEARCH GAP</span></div>
+        <div class="next-layout">
+          <div>
+            <p class="eyebrow">WHERE TO GO FROM HERE</p>
+            <h2 id="next-title">The next win is<br /><em>better evidence.</em></h2>
+          </div>
+          <div class="next-copy">
+            <p>The engineering foundation is ready. The scientific bottleneck is now clear: we need multiple independent run-level cases with confirmed transition/CHF event provenance.</p>
+            <div class="next-list">
+              <div><span>01</span><p><strong>Catalog the full archive</strong> by case, run, modality, and label provenance.</p></div>
+              <div><span>02</span><p><strong>Lock the event definition</strong> with confirmed labels and a warning horizon.</p></div>
+              <div><span>03</span><p><strong>Repeat grouped evaluation</strong> without treating adjacent windows as independent experiments.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="archive-panel">
+          <div>
+            <p class="eyebrow">PROVENANCE</p>
+            <h2 id="archive-title">Pinned, public,<br /><em>and accounted for.</em></h2>
+          </div>
+          <div class="archive-details">
+            <div><span>DATASET</span><a id="source-link" href="https://huggingface.co/datasets/hanhuark/BoilingBench-Multimodal" target="_blank" rel="noreferrer">BoilingBench-Multimodal ↗</a></div>
+            <div><span>REVISION</span><code id="revision-value">—</code></div>
+            <div><span>MANIFEST</span><a id="manifest-link" href="#" target="_blank" rel="noreferrer">Open verification record ↗</a></div>
+            <div><span>STATUS</span><strong class="pass-text" id="archive-status">—</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <div><span class="brand-mark small" aria-hidden="true"><span></span><span></span><span></span></span><span>BoilingBench Results Lab</span></div>
+      <p>Transparent diagnostics · public release · no raw archive hosted here</p>
+      <a href="https://github.com/UARK-NED3/BoilingBench-Multimodal/pull/2" target="_blank" rel="noreferrer">View the working record ↗</a>
+    </footer>
+  </body>
+</html>

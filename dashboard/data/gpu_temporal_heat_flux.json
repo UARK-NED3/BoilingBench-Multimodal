@@ -1,0 +1,308 @@
+{
+  "experiment": "gpu_temporal_heat_flux_regression",
+  "contract_schema_version": "1.0",
+  "release": "v0.1.0",
+  "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "data_root_label": "BoilingBench-public-e4d977db",
+  "protocol": "leave-one-dataset-out; all windows from the held-out dataset stay unseen",
+  "target": "processed_heat_flux_W_cm2",
+  "target_note": "Derived analysis product from the thermal release; this is not independent physical CHF validation.",
+  "features": [
+    "thermocouple_1_C",
+    "thermocouple_2_C",
+    "thermocouple_3_C",
+    "thermocouple_4_C",
+    "pressure_kPa_interpolated"
+  ],
+  "device": "cuda",
+  "gpu_name": "NVIDIA RTX PRO 5000 Blackwell Generation Laptop GPU",
+  "torch_version": "2.12.1+cu130",
+  "hyperparameters": {
+    "target_hz": 10.0,
+    "sequence_length": 128,
+    "stride": 16,
+    "epochs": 40,
+    "batch_size": 256,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "amp": true
+  },
+  "cases": {
+    "BB-1": {
+      "dataset": "BB-1",
+      "duration_s": 988.2,
+      "samples_after_resampling": 9883,
+      "native_case_path": "BoilingBench-1_Ambient_subcooled_flatCu_pool_boiling/BoilingBench-1_Multimodal_Processed",
+      "native_median_dt_s": 0.10000000000002274
+    },
+    "BB-2": {
+      "dataset": "BB-2",
+      "duration_s": 1556.9,
+      "samples_after_resampling": 15570,
+      "native_case_path": "BoilingBench-2_Subatmospheric_saturated_flatCu_pool_boiling/BoilingBench-2_Multimodal_Processed",
+      "native_median_dt_s": 0.10000000000002274
+    },
+    "BB-3": {
+      "dataset": "BB-3",
+      "duration_s": 556.0,
+      "samples_after_resampling": 5561,
+      "native_case_path": "BoilingBench-3_Ambient_saturated_CuFoam_pool_boiling/BoilingBench-3_Multimodal_Processed",
+      "native_median_dt_s": 0.000332000000000221
+    },
+    "BB-4": {
+      "dataset": "BB-4",
+      "duration_s": 386.0,
+      "samples_after_resampling": 3861,
+      "native_case_path": "BoilingBench-4_Ambient_saturated_flatCu_pool_boiling/BoilingBench-4_Multimodal_Processed",
+      "native_median_dt_s": 0.000332000000000221
+    }
+  },
+  "window_counts": {
+    "BB-1": 610,
+    "BB-2": 966,
+    "BB-3": 340,
+    "BB-4": 234
+  },
+  "folds": [
+    {
+      "n": 610,
+      "baseline_mae_W_cm2": 144.82012939453125,
+      "mae_W_cm2": 148.70492553710938,
+      "rmse_W_cm2": 171.31539916992188,
+      "r2": -2.3199307918548584,
+      "seed": 11,
+      "train_datasets": [
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "test_dataset": "BB-1",
+      "n_train": 1540,
+      "n_test": 610,
+      "epochs": 40,
+      "train_seconds": 1.1265865199966356,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 610,
+      "baseline_mae_W_cm2": 144.82012939453125,
+      "mae_W_cm2": 151.4884796142578,
+      "rmse_W_cm2": 174.78036499023438,
+      "r2": -2.4555845260620117,
+      "seed": 22,
+      "train_datasets": [
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "test_dataset": "BB-1",
+      "n_train": 1540,
+      "n_test": 610,
+      "epochs": 40,
+      "train_seconds": 0.6029439260018989,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 610,
+      "baseline_mae_W_cm2": 144.82012939453125,
+      "mae_W_cm2": 134.61639404296875,
+      "rmse_W_cm2": 156.001708984375,
+      "r2": -1.7529287338256836,
+      "seed": 33,
+      "train_datasets": [
+        "BB-2",
+        "BB-3",
+        "BB-4"
+      ],
+      "test_dataset": "BB-1",
+      "n_train": 1540,
+      "n_test": 610,
+      "epochs": 40,
+      "train_seconds": 0.6248721819138154,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 966,
+      "baseline_mae_W_cm2": 80.29304504394531,
+      "mae_W_cm2": 1361.0072021484375,
+      "rmse_W_cm2": 1361.1051025390625,
+      "r2": -26145.798828125,
+      "seed": 11,
+      "train_datasets": [
+        "BB-1",
+        "BB-3",
+        "BB-4"
+      ],
+      "test_dataset": "BB-2",
+      "n_train": 1184,
+      "n_test": 966,
+      "epochs": 40,
+      "train_seconds": 0.48149354301858693,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 966,
+      "baseline_mae_W_cm2": 80.29304504394531,
+      "mae_W_cm2": 1012.2108154296875,
+      "rmse_W_cm2": 1013.822998046875,
+      "r2": -14505.39453125,
+      "seed": 22,
+      "train_datasets": [
+        "BB-1",
+        "BB-3",
+        "BB-4"
+      ],
+      "test_dataset": "BB-2",
+      "n_train": 1184,
+      "n_test": 966,
+      "epochs": 40,
+      "train_seconds": 0.46747485804371536,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 966,
+      "baseline_mae_W_cm2": 80.29304504394531,
+      "mae_W_cm2": 608.8023071289062,
+      "rmse_W_cm2": 614.0007934570312,
+      "r2": -5319.751953125,
+      "seed": 33,
+      "train_datasets": [
+        "BB-1",
+        "BB-3",
+        "BB-4"
+      ],
+      "test_dataset": "BB-2",
+      "n_train": 1184,
+      "n_test": 966,
+      "epochs": 40,
+      "train_seconds": 0.4359492249786854,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 340,
+      "baseline_mae_W_cm2": 50.21728515625,
+      "mae_W_cm2": 17.39640998840332,
+      "rmse_W_cm2": 26.992359161376953,
+      "r2": 0.45550626516342163,
+      "seed": 11,
+      "train_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-4"
+      ],
+      "test_dataset": "BB-3",
+      "n_train": 1810,
+      "n_test": 340,
+      "epochs": 40,
+      "train_seconds": 0.7339651639340445,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 340,
+      "baseline_mae_W_cm2": 50.21728515625,
+      "mae_W_cm2": 14.581188201904297,
+      "rmse_W_cm2": 24.260740280151367,
+      "r2": 0.5601351261138916,
+      "seed": 22,
+      "train_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-4"
+      ],
+      "test_dataset": "BB-3",
+      "n_train": 1810,
+      "n_test": 340,
+      "epochs": 40,
+      "train_seconds": 0.7173786161001772,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 340,
+      "baseline_mae_W_cm2": 50.21728515625,
+      "mae_W_cm2": 12.17046070098877,
+      "rmse_W_cm2": 19.50140953063965,
+      "r2": 0.7157875299453735,
+      "seed": 33,
+      "train_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-4"
+      ],
+      "test_dataset": "BB-3",
+      "n_train": 1810,
+      "n_test": 340,
+      "epochs": 40,
+      "train_seconds": 0.7294261759379879,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 234,
+      "baseline_mae_W_cm2": 43.32625961303711,
+      "mae_W_cm2": 7.929042339324951,
+      "rmse_W_cm2": 9.991782188415527,
+      "r2": 0.8310893774032593,
+      "seed": 11,
+      "train_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3"
+      ],
+      "test_dataset": "BB-4",
+      "n_train": 1916,
+      "n_test": 234,
+      "epochs": 40,
+      "train_seconds": 0.7544438840122893,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 234,
+      "baseline_mae_W_cm2": 43.32625961303711,
+      "mae_W_cm2": 5.7386603355407715,
+      "rmse_W_cm2": 8.882139205932617,
+      "r2": 0.866523027420044,
+      "seed": 22,
+      "train_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3"
+      ],
+      "test_dataset": "BB-4",
+      "n_train": 1916,
+      "n_test": 234,
+      "epochs": 40,
+      "train_seconds": 0.6974323139293119,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    },
+    {
+      "n": 234,
+      "baseline_mae_W_cm2": 43.32625961303711,
+      "mae_W_cm2": 5.229076385498047,
+      "rmse_W_cm2": 7.940557956695557,
+      "r2": 0.8933224081993103,
+      "seed": 33,
+      "train_datasets": [
+        "BB-1",
+        "BB-2",
+        "BB-3"
+      ],
+      "test_dataset": "BB-4",
+      "n_train": 1916,
+      "n_test": 234,
+      "epochs": 40,
+      "train_seconds": 0.747263946919702,
+      "train_only_feature_scaling": true,
+      "train_only_target_scaling": true
+    }
+  ]
+}

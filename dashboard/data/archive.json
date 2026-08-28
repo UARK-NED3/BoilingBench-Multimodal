@@ -1,0 +1,12 @@
+{
+  "source": "hanhuark/BoilingBench-Multimodal",
+  "revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "status": "pass",
+  "files": 6915,
+  "bytes": 33193155778,
+  "missing": 0,
+  "size_mismatches": 0,
+  "extras": 0,
+  "manifest_url": "https://github.com/UARK-NED3/BoilingBench-Multimodal/blob/chfwatch-reference-baseline/results/public_archive_manifest.json",
+  "source_url": "https://huggingface.co/datasets/hanhuark/BoilingBench-Multimodal"
+}

@@ -1,0 +1,167 @@
+{
+  "experiment": "gpu_bubble_area_regression",
+  "contract_schema_version": "1.0",
+  "release": "v0.1.0",
+  "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "data_root_label": "BoilingBench-public-e4d977db",
+  "split_policy": "BubbleID_base Train/Test are explicit; external domains are evaluation-only",
+  "target": "polygon_bubble_area_fraction",
+  "target_note": "Polygon areas are derived from public human annotations; the sigmoid head constrains predictions to [0, 1]. This is a visual boiling diagnostic, not a CHF label.",
+  "device": "cuda",
+  "gpu_name": "NVIDIA RTX PRO 5000 Blackwell Generation Laptop GPU",
+  "torch_version": "2.12.1+cu130",
+  "model": "four-block convolutional regressor trained from scratch",
+  "hyperparameters": {
+    "epochs": 30,
+    "batch_size": 64,
+    "image_size": 160,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "validation_fraction": 0.2,
+    "num_workers": 0,
+    "amp": true
+  },
+  "available_records": {
+    "train": 1384,
+    "base_test": 125,
+    "flow_external": 130,
+    "new_facility_external": 24
+  },
+  "runs": [
+    {
+      "seed": 11,
+      "fit_count": 1107,
+      "validation_count": 277,
+      "best_epoch": 27,
+      "best_validation_smooth_l1": 0.010325374770976791,
+      "baseline_area_fraction": 0.1839118751332575,
+      "evaluations": {
+        "fit": {
+          "n": 1107,
+          "baseline_mae_area_fraction": 0.07496839016675949,
+          "mae_area_fraction": 0.014085307717323303,
+          "rmse_area_fraction": 0.021403376013040543,
+          "r2": 0.9515796899795532
+        },
+        "validation": {
+          "n": 277,
+          "baseline_mae_area_fraction": 0.08433300256729126,
+          "mae_area_fraction": 0.01450973842293024,
+          "rmse_area_fraction": 0.0203299131244421,
+          "r2": 0.9628893733024597
+        },
+        "base_test": {
+          "n": 125,
+          "baseline_mae_area_fraction": 0.07875979691743851,
+          "mae_area_fraction": 0.01824430748820305,
+          "rmse_area_fraction": 0.030041610822081566,
+          "r2": 0.9103195667266846
+        },
+        "flow_external": {
+          "n": 130,
+          "baseline_mae_area_fraction": 0.17674584686756134,
+          "mae_area_fraction": 0.5189656615257263,
+          "rmse_area_fraction": 0.5189793705940247,
+          "r2": -10571.0390625
+        },
+        "new_facility_external": {
+          "n": 24,
+          "baseline_mae_area_fraction": 0.2378225326538086,
+          "mae_area_fraction": 0.1327022910118103,
+          "rmse_area_fraction": 0.1646193414926529,
+          "r2": 0.33350759744644165
+        }
+      }
+    },
+    {
+      "seed": 22,
+      "fit_count": 1107,
+      "validation_count": 277,
+      "best_epoch": 28,
+      "best_validation_smooth_l1": 0.013433890117984602,
+      "baseline_area_fraction": 0.18141250979255402,
+      "evaluations": {
+        "fit": {
+          "n": 1107,
+          "baseline_mae_area_fraction": 0.07532086968421936,
+          "mae_area_fraction": 0.014842190779745579,
+          "rmse_area_fraction": 0.020854678004980087,
+          "r2": 0.9551982879638672
+        },
+        "validation": {
+          "n": 277,
+          "baseline_mae_area_fraction": 0.08136124908924103,
+          "mae_area_fraction": 0.01787380874156952,
+          "rmse_area_fraction": 0.027488894760608673,
+          "r2": 0.925811767578125
+        },
+        "base_test": {
+          "n": 125,
+          "baseline_mae_area_fraction": 0.07885976135730743,
+          "mae_area_fraction": 0.019802382215857506,
+          "rmse_area_fraction": 0.029022589325904846,
+          "r2": 0.916300356388092
+        },
+        "flow_external": {
+          "n": 130,
+          "baseline_mae_area_fraction": 0.17424647510051727,
+          "mae_area_fraction": 0.5647294521331787,
+          "rmse_area_fraction": 0.5647412538528442,
+          "r2": -12517.6533203125
+        },
+        "new_facility_external": {
+          "n": 24,
+          "baseline_mae_area_fraction": 0.23865564167499542,
+          "mae_area_fraction": 0.10001345723867416,
+          "rmse_area_fraction": 0.12141813337802887,
+          "r2": 0.6374228000640869
+        }
+      }
+    },
+    {
+      "seed": 33,
+      "fit_count": 1107,
+      "validation_count": 277,
+      "best_epoch": 27,
+      "best_validation_smooth_l1": 0.011804184530078289,
+      "baseline_area_fraction": 0.1823707866697377,
+      "evaluations": {
+        "fit": {
+          "n": 1107,
+          "baseline_mae_area_fraction": 0.07641611993312836,
+          "mae_area_fraction": 0.013177013956010342,
+          "rmse_area_fraction": 0.019754858687520027,
+          "r2": 0.9600338339805603
+        },
+        "validation": {
+          "n": 277,
+          "baseline_mae_area_fraction": 0.07755774259567261,
+          "mae_area_fraction": 0.015794668346643448,
+          "rmse_area_fraction": 0.02616526186466217,
+          "r2": 0.9313602447509766
+        },
+        "base_test": {
+          "n": 125,
+          "baseline_mae_area_fraction": 0.07882144302129745,
+          "mae_area_fraction": 0.01818574033677578,
+          "rmse_area_fraction": 0.02893720753490925,
+          "r2": 0.916792094707489
+        },
+        "flow_external": {
+          "n": 130,
+          "baseline_mae_area_fraction": 0.17520473897457123,
+          "mae_area_fraction": 0.5876307487487793,
+          "rmse_area_fraction": 0.5876432657241821,
+          "r2": -13553.5830078125
+        },
+        "new_facility_external": {
+          "n": 24,
+          "baseline_mae_area_fraction": 0.2383362203836441,
+          "mae_area_fraction": 0.11679168790578842,
+          "rmse_area_fraction": 0.14795196056365967,
+          "r2": 0.4616374373435974
+        }
+      }
+    }
+  ]
+}
