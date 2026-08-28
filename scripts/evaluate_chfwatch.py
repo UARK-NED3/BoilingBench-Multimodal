@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Evaluate the CHF-Watch reference baseline on one leave-one-surface-out fold.
 
-Binds a `splits/ned3-007-lso-surface-<surface>.csv` file to the standalone
+Binds a `splits/lso-surface-<surface>.csv` file to the standalone
 CHF-Watch pipeline (pinned at `b86bf0d`) and produces the standard
 metadata/metrics record for that fold. Nothing is vendored here; the
 benchmark script delegates the actual evaluation to the standalone repo's
@@ -13,9 +13,9 @@ benchmark maintainers on repo-defined runs and split files (see
 baselines/chfwatch/README.md).
 
 Usage:
-    python scripts/evaluate_chfwatch.py --split splits/ned3-007-lso-surface-cu_foam_pH0.csv \
+    python scripts/evaluate_chfwatch.py --split splits/lso-surface-cu_foam_pH0.csv \
         --manifest MANIFEST_NED3_007_FILES.csv \
-        --repo ~/chf-watch --data-root <ned3-007 archive root> \
+        --repo ~/chf-watch --data-root <BoilingBench-3/4 multimodal archive root> \
         --cache-root <feature cache> --out results/fold_cu_foam_pH0.json
 """
 from __future__ import annotations
@@ -65,11 +65,11 @@ def _run_standalone_e21(args, chfwatch_dir: Path, out_dir: Path) -> dict:
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--split", required=True, type=Path, help="one ned3-007-lso-surface-*.csv file")
+    p.add_argument("--split", required=True, type=Path, help="one splits/lso-surface-<surface>.csv file")
     p.add_argument("--manifest", default=Path("MANIFEST_NED3_007_FILES.csv"), type=Path)
     p.add_argument("--repo", required=True, type=Path, help="standalone chf-watch checkout (pinned b86bf0d)")
-    p.add_argument("--data-root", required=True, type=Path, help="extracted ned3-007 archive root (ae/ etc.)")
-    p.add_argument("--cache-root", default=Path("data/processed/ned3_007"), type=Path)
+    p.add_argument("--data-root", required=True, type=Path, help="extracted BoilingBench-3/4 multimodal archive root (ae/ etc.)")
+    p.add_argument("--cache-root", default=Path("data/processed/boilingbench_34"), type=Path)
     p.add_argument("--max-far-cal", type=float, default=0.05)
     p.add_argument("--out", required=True, type=Path, help="output metrics JSON")
     p.add_argument("--status", choices=["provisional"], default="provisional")

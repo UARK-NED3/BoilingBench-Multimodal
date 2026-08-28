@@ -1,6 +1,7 @@
 """Tests for the CHF-Watch reference baseline adapter (splits -> surfaces)."""
 from __future__ import annotations
 
+import csv
 import sys
 from pathlib import Path
 
@@ -16,7 +17,7 @@ SPLITS = REPO / "splits"
 
 
 def _split_files() -> list[Path]:
-    return sorted(SPLITS.glob("ned3-007-lso-surface-*.csv"))
+    return sorted(SPLITS.glob("lso-surface-*.csv"))
 
 
 def test_manifest_maps_all_five_surfaces() -> None:
@@ -43,7 +44,7 @@ def test_test_runs_are_only_held_out_surface() -> None:
 
 def test_unknown_run_id_raises(tmp_path: Path) -> None:
     bad = tmp_path / "bad.csv"
-    bad.write_text("dataset_id,run_id,split,task,notes\nned3-007,B999,test,multimodal_fusion,\n")
+    bad.write_text("dataset_id,run_id,split,task,notes\nBoilingBench-3,B999,test,multimodal_fusion,\n")
     with pytest.raises(ValueError, match="B999"):
         adapter.load_surface_split(bad, MANIFEST)
 
@@ -55,3 +56,16 @@ def test_published_labels_cover_all_surfaces_and_flag_inferred() -> None:
     assert labels["microchannel"] > 0
     assert inferred == ["microchannel"]
     assert labels["polished_cu"] < labels["cu_foam_pH0"]  # smooth Cu is the low-CHF case
+
+
+def test_surface_to_dataset_mapping_and_split_dataset_ids() -> None:
+    assert adapter.dataset_of_surface("cu_foam_pH0") == "BoilingBench-3"
+    assert adapter.dataset_of_surface("polished_cu") == "BoilingBench-4"
+    assert adapter.dataset_of_surface("microchannel") == "BoilingBench-4"
+    for split_csv in _split_files():
+        _train, test = adapter.load_surface_split(split_csv, MANIFEST)
+        held_out = test[0]
+        expected = adapter.dataset_of_surface(held_out)
+        with split_csv.open(newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        assert rows and all(r["dataset_id"] == expected for r in rows)

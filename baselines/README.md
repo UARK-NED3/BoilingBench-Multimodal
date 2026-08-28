@@ -11,7 +11,8 @@ The v0.1 benchmark should include simple baselines before advanced deep-learning
 Baseline notebooks should record preprocessing, split file, random seed, package versions, and metric output.
 
 **Reference baseline contributions:** [`baselines/chfwatch/`](chfwatch/) adds a
-transition-warning reference baseline for the `multimodal_fusion` task on
-NED3-007 (pinned standalone repo, LSO splits, conformal calibration, OOD
+transition-warning reference baseline for the `multimodal_fusion` task on the
+current benchmark's multimodal boiling datasets (BoilingBench-3/4 from
+NED3-002; pinned standalone repo, LSO splits, conformal calibration, OOD
 flag, quantile-directional bands). Provisional numbers and reproduction
 instructions live in its README.

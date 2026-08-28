@@ -1,0 +1,3 @@
+dataset_id,run_id,split,task,notes
+BoilingBench-4,B78,test,multimodal_fusion,leave-one-surface-out; held-out surface: polished_cu
+BoilingBench-4,B79,test,multimodal_fusion,leave-one-surface-out; held-out surface: polished_cu

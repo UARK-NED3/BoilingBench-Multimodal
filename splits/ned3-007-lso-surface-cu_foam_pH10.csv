@@ -1,3 +1,0 @@
-dataset_id,run_id,split,task,notes
-ned3-007,B83,test,multimodal_fusion,leave-one-surface-out; held-out surface: cu_foam_pH10
-ned3-007,B84,test,multimodal_fusion,leave-one-surface-out; held-out surface: cu_foam_pH10

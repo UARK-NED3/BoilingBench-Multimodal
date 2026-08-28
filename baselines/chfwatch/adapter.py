@@ -6,11 +6,18 @@ and split files can drive it. Pin the standalone repo with:
 
     pip install "git+https://gitlab.com/moore.brad.m-group/chf-watch.git@b86bf0d"
 
+Dataset identity (per NED3 maintainers, 2026-06-03): the multimodal boiling
+runs this baseline covers are distributed in the current benchmark as
+**BoilingBench-3** (Cu-foam surfaces) and **BoilingBench-4** (flat-Cu
+surfaces), originating from NED3-002 — not NED3-007 (a steady-state-only set
+dropped from the benchmark). Run resolution currently reads the repo's
+legacy staging manifest `MANIFEST_NED3_007_FILES.csv`; the current-version
+distribution is BoilingBench-3/4 on Hugging Face / Zenodo / Dryad.
+
 The two useful entry points:
 
   * `run_to_surface(run_id, manifest) -> surface`  -- resolve a BoilingBench
-    run id to the NED3-007 surface key it belongs to, using only the archive
-    manifest (single source of truth).
+    run id to the surface key it belongs to, using only the archive manifest.
   * `load_surface_split(csv_path, manifest) -> (train_surfaces, test_surfaces)`
     -- turn one leave-one-surface-out split file into the surface sets that
     drive CHF-Watch's group-held-out evaluation.
@@ -22,7 +29,7 @@ import re
 from pathlib import Path
 from typing import Iterable
 
-# Dataset archive folder prefix -> NED3-007 surface key.
+# Dataset archive folder prefix -> surface key.
 FOLDER_PREFIX_TO_SURFACE = {
     "PH0": "cu_foam_pH0",
     "PH10": "cu_foam_pH10",
@@ -33,11 +40,27 @@ FOLDER_PREFIX_TO_SURFACE = {
 
 SURFACES = ("cu_foam_pH0", "cu_foam_pH10", "cu_foam_pH12", "microchannel", "polished_cu")
 
+# Surface -> current benchmark dataset id. microchannel is flat-copper family
+# (BoilingBench-4) but not named on the BBB-4 card; flagged for confirmation.
+SURFACE_TO_DATASET = {
+    "cu_foam_pH0": "BoilingBench-3",
+    "cu_foam_pH10": "BoilingBench-3",
+    "cu_foam_pH12": "BoilingBench-3",
+    "polished_cu": "BoilingBench-4",
+    "microchannel": "BoilingBench-4",
+}
+
 _RUN_FOLDER_RE = re.compile(r"/(?:Steady State|Transient)/(.+?/)?(PH\d+|Polished Cu|Polished MC)_(B\d+)/")
 
 # Evaluation-only label interface. Holds PUBLISHED aggregates only (Dunlap
-# et al. Table 1 / Pandey-Li-Hu 2024); per-file lab data stays private.
-DEFAULT_LABELS_CSV = Path(__file__).resolve().parent.parent.parent / "metadata" / "ned3-007_chf_published_labels.csv"
+# et al. 2023, Pandey-Li-Hu 2024, benchmark release Pandey et al. 2025);
+# per-file lab data stays private.
+DEFAULT_LABELS_CSV = Path(__file__).resolve().parent.parent.parent / "metadata" / "boilingbench-chf_published_labels.csv"
+
+
+def dataset_of_surface(surface: str) -> str:
+    """Which current-benchmark BoilingBench dataset the surface belongs to."""
+    return SURFACE_TO_DATASET[surface]
 
 
 def load_published_chf_labels(labels_csv: str | Path = DEFAULT_LABELS_CSV) -> dict[str, float]:
@@ -80,9 +103,9 @@ def load_surface_split(split_csv: str | Path,
                        all_surfaces: Iterable[str] = SURFACES) -> tuple[list[str], list[str]]:
     """Return (train_surfaces, test_surfaces) for a leave-one-surface-out file.
 
-    `all_surfaces` must be the complete NED3-007 surface set. The split file
-    lists only the held-out test runs (see splits/README); training surfaces
-    are the complement over the manifest's run->surface map.
+    `all_surfaces` must be the complete BoilingBench-3/4 surface set. The
+    split file lists only the held-out test runs (see splits/README);
+    training surfaces are the complement over the manifest's run->surface map.
     """
     split_csv = Path(split_csv)
     run_surface = run_to_surface_map(manifest)
