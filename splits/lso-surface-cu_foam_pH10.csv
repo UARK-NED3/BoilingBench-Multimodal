@@ -1,3 +1,0 @@
-dataset_id,run_id,split,task,notes
-BoilingBench-3,B83,test,multimodal_fusion,leave-one-surface-out; held-out surface: cu_foam_pH10
-BoilingBench-3,B84,test,multimodal_fusion,leave-one-surface-out; held-out surface: cu_foam_pH10

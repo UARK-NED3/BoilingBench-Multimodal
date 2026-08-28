@@ -1,3 +1,0 @@
-dataset_id,run_id,split,task,notes
-BoilingBench-4,B114,test,multimodal_fusion,leave-one-surface-out; held-out surface: microchannel; confirm microchannel->BoilingBench-4
-BoilingBench-4,B119,test,multimodal_fusion,leave-one-surface-out; held-out surface: microchannel; confirm microchannel->BoilingBench-4
