@@ -46,3 +46,12 @@ def test_unknown_run_id_raises(tmp_path: Path) -> None:
     bad.write_text("dataset_id,run_id,split,task,notes\nned3-007,B999,test,multimodal_fusion,\n")
     with pytest.raises(ValueError, match="B999"):
         adapter.load_surface_split(bad, MANIFEST)
+
+
+def test_published_labels_cover_all_surfaces_and_flag_inferred() -> None:
+    labels = adapter.load_published_chf_labels()
+    inferred = adapter.inferred_chf_surfaces()
+    assert set(labels) == set(adapter.SURFACES)
+    assert labels["microchannel"] > 0
+    assert inferred == ["microchannel"]
+    assert labels["polished_cu"] < labels["cu_foam_pH0"]  # smooth Cu is the low-CHF case

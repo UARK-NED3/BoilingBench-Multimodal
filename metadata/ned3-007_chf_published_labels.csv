@@ -1,0 +1,6 @@
+surface_key,chf_w_cm2,value_source,provenance,notes
+cu_foam_pH0,168.1017,published_aggregate,"Dunlap et al., Appl. Therm. Eng. 228 (2023) 120558, Table 1; Pandey-Li-Hu 2024, Data in Brief 55:110582",
+cu_foam_pH10,192.2390,published_aggregate,"Dunlap et al., Appl. Therm. Eng. 228 (2023) 120558, Table 1; Pandey-Li-Hu 2024, Data in Brief 55:110582",
+cu_foam_pH12,186.3175,published_aggregate,"Dunlap et al., Appl. Therm. Eng. 228 (2023) 120558, Table 1; Pandey-Li-Hu 2024, Data in Brief 55:110582",
+polished_cu,121.8222,published_aggregate,"Dunlap et al., Appl. Therm. Eng. 228 (2023) 120558, Table 1; Pandey-Li-Hu 2024, Data in Brief 55:110582",
+microchannel,221.50,inferred,"Standalone repo b86bf0d: setpoint-ladder inference (not in the private per-file spreadsheet)","flagged inferred; not in Hari Pandey's private spreadsheet"

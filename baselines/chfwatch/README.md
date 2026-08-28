@@ -6,6 +6,17 @@ correspondence with the NED3 lab (Prof. Han Hu, June 2026). Scope was agreed
 in [issue #1](../../issues/1): AE + hydrophone + thermal features on the
 standard 5-surface split; `.cine` video deferred; no new datasets.
 
+## Task specification
+
+This is a contribution to the repo's existing
+[`tasks/multimodal_fusion.md`](../../tasks/multimodal_fusion.md) track —
+**transition warning** is already one of its listed targets, so no new task
+file or new task terminology is introduced. Following the repo's release
+terminology throughout: dataset ids (`ned3-007`), run ids as archive folder
+tokens (`B69`, `B70`, ...), surfaces as the canonical
+`cu_foam_pH0 / cu_foam_pH10 / cu_foam_pH12 / polished_cu / microchannel`
+keys, and `splits/<dataset_id>-lso-surface-<surface>.csv` per fold.
+
 The full implementation lives in the standalone repo, **pinned**, not
 vendored:
 
@@ -15,7 +26,11 @@ vendored:
 - Install: `pip install "git+https://gitlab.com/moore.brad.m-group/chf-watch.git@b86bf0d"`
 - Environment: `environment.yaml` in this directory (Python 3.11, PyTorch
   cu128-nightly for Blackwell/sm_120; see the standalone README for the
-  wheel gotcha).
+  wheel gotcha). A plain-pip mirror is in `requirements.txt`.
+- Configs used for the reported runs (standalone repo at `b86bf0d`):
+  `configs/surface_heldout.yaml` (group-holdout at `level: surface`) and
+  `configs/ned3_multimodal.yaml`; the E21 LSO threshold calibration is
+  documented in `reports/tables/E21_lso_calibrated_detector.md`.
 
 ## What the baseline is
 
@@ -84,12 +99,17 @@ Aggregate across surfaces: **5/5 recall, median 52.5 s lead, mean FAR 0.050**
 interpretation are in the standalone repo's
 `reports/tables/E21_lso_calibrated_detector.md`.
 
-CHF ground truth used for lead-time/labeling is the **published aggregates**
-(Dunlap et al. Table 1 and the dataset's measured values); per-run lab data
-(Prof. Hu / Hari Pandey's spreadsheet) remains private and is not included.
-The `microchannel` surface's CHF is flagged inferred (not in the private
-spreadsheet; derived from the setpoint ladder as documented in the standalone
-repo).
+CHF ground truth used for lead-time/labeling is exposed through the
+**evaluation-only label interface**
+[`metadata/ned3-007_chf_published_labels.csv`](../../metadata/ned3-007_chf_published_labels.csv):
+**published aggregates only** — the Dunlap et al. Table 1 steady-state values
+and the Pandey-Li-Hu (2024) data-paper values, with
+`value_source == "inferred"` on the `microchannel` surface (not in the
+private spreadsheet; derived from the setpoint ladder as documented in the
+standalone repo). Per-run lab data (Prof. Hu / Hari Pandey's spreadsheet)
+remains **private and is not included**. The adapter exposes this via
+`adapter.load_published_chf_labels()` / `adapter.inferred_chf_surfaces()`;
+we are happy to follow the lab's lead on the exact interface shape.
 
 ## Scope, licensing, disclosure
 

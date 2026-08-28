@@ -1,0 +1,31 @@
+# CHF-Watch reference baseline — pip (dry-run) dependency set.
+#
+# Conda users: use environment.yaml instead (it also pins conda channels).
+# This requirements.txt mirrors the pip block of that environment so the
+# reference baseline is installable with a plain `pip install -r ...`.
+#
+# On Blackwell (sm_120) laptop GPUs the stable cu124 wheel only ships
+# kernels up to sm_90, so pull the PyTorch wheels from the cu128 nightly
+# index until a stable wheel supports sm_120 (see standalone repo README).
+--extra-index-url https://download.pytorch.org/whl/nightly/cu128
+--pre
+
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+librosa
+soundfile
+h5py
+lightgbm
+pyyaml
+tqdm
+rich
+netcal
+mapie
+torch-uncertainty
+
+# The reference baseline itself, pinned to the standalone release used for
+# every number quoted in this baseline's README.
+git+https://gitlab.com/moore.brad.m-group/chf-watch.git@b86bf0d

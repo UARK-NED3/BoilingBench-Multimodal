@@ -35,6 +35,30 @@ SURFACES = ("cu_foam_pH0", "cu_foam_pH10", "cu_foam_pH12", "microchannel", "poli
 
 _RUN_FOLDER_RE = re.compile(r"/(?:Steady State|Transient)/(.+?/)?(PH\d+|Polished Cu|Polished MC)_(B\d+)/")
 
+# Evaluation-only label interface. Holds PUBLISHED aggregates only (Dunlap
+# et al. Table 1 / Pandey-Li-Hu 2024); per-file lab data stays private.
+DEFAULT_LABELS_CSV = Path(__file__).resolve().parent.parent.parent / "metadata" / "ned3-007_chf_published_labels.csv"
+
+
+def load_published_chf_labels(labels_csv: str | Path = DEFAULT_LABELS_CSV) -> dict[str, float]:
+    """Return {surface_key: chf_w_cm2} from the published-aggregates interface."""
+    with Path(labels_csv).open(newline="", encoding="utf-8") as f:
+        return {row["surface_key"]: float(row["chf_w_cm2"]) for row in csv.DictReader(f)}
+
+
+def inferred_chf_surfaces(labels_csv: str | Path = DEFAULT_LABELS_CSV) -> list[str]:
+    """Surfaces whose CHF is NOT a published table value (e.g. microchannel).
+
+    Included in the interface so lead-time labels stay computable, but they
+    must be flagged wherever numbers are quoted.
+    """
+    inferred: list[str] = []
+    with Path(labels_csv).open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row.get("value_source") == "inferred":
+                inferred.append(row["surface_key"])
+    return inferred
+
 
 def run_to_surface_map(manifest: str | Path) -> dict[str, str]:
     """Map every run id present in the archive manifest to its surface key."""
