@@ -52,3 +52,10 @@ def test_missing_microphone_does_not_drop_common_modality_rows(tmp_path: Path) -
     assert len(frame) > 0
     assert metadata["available_modalities"]["microphone"] is False
     assert metadata["required_features"] == list(COMMON_FEATURES)
+
+
+def test_time_is_available_as_an_explicit_baseline_feature(tmp_path: Path) -> None:
+    _write_case(tmp_path)
+    frame, _metadata = load_processed_case(tmp_path, required_features=("time_s",))
+    assert frame["time_s"].is_monotonic_increasing
+    assert frame["time_s"].notna().all()

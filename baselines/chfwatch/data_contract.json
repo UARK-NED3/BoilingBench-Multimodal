@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "BoilingBench-Multimodal",
+  "release": "v0.1.0",
+  "huggingface_dataset": "hanhuark/BoilingBench-Multimodal",
+  "huggingface_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "scope": "Public processed exports for cross-dataset baseline evaluation.",
+  "target": {
+    "name": "heat_flux_W_cm2",
+    "status": "derived_analysis_product",
+    "independent_physical_measurement": false,
+    "use_as_confirmed_chf_label": false
+  },
+  "event_label_policy": {
+    "confirmed": "Eligible for event-performance claims only when the release explicitly marks the event confirmed.",
+    "screening": "Descriptive metadata only; never a safety label.",
+    "derived": "Descriptive analysis product only.",
+    "not_confirmed": "Never use as a CHF ground-truth label."
+  },
+  "datasets": {
+    "BB-1": {
+      "directory": "BoilingBench-1_Ambient_subcooled_flatCu_pool_boiling/BoilingBench-1_Multimodal_Processed",
+      "condition": "Ambient subcooled flat-Cu pool boiling",
+      "continuous_ae_waveform": true,
+      "microphone_band_power": false
+    },
+    "BB-2": {
+      "directory": "BoilingBench-2_Subatmospheric_saturated_flatCu_pool_boiling/BoilingBench-2_Multimodal_Processed",
+      "condition": "Subatmospheric saturated flat-Cu pool boiling",
+      "continuous_ae_waveform": true,
+      "microphone_band_power": false
+    },
+    "BB-3": {
+      "directory": "BoilingBench-3_Ambient_saturated_CuFoam_pool_boiling/BoilingBench-3_Multimodal_Processed",
+      "condition": "Ambient saturated Cu-foam pool boiling",
+      "continuous_ae_waveform": false,
+      "microphone_band_power": true
+    },
+    "BB-4": {
+      "directory": "BoilingBench-4_Ambient_saturated_flatCu_pool_boiling/BoilingBench-4_Multimodal_Processed",
+      "condition": "Ambient saturated flat-Cu pool boiling",
+      "continuous_ae_waveform": false,
+      "microphone_band_power": true
+    }
+  },
+  "required_processed_files": [
+    "summary.json",
+    "critical_events.csv",
+    "time_alignment.json",
+    "ae_hit_parameters_aligned.csv",
+    "hydrophone_band_integrated_power.csv",
+    "thermal_timeseries.npz"
+  ],
+  "optional_processed_files": [
+    "microphone_band_integrated_power.csv",
+    "ae_wfs_band_integrated_power.csv",
+    "ae_wfs_channel_1_metadata.json"
+  ],
+  "split_policy": {
+    "primary_group": "dataset_id",
+    "adjacent_windows_may_cross_splits": false,
+    "preprocessing_fit_on_training_only": true,
+    "window_counts_are_not_independent_run_counts": true
+  }
+}

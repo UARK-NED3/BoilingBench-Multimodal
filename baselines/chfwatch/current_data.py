@@ -5,12 +5,14 @@ not fabricate five-surface splits or treat chf_proxy as confirmed CHF.
 """
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-HF_REVISION = "e4d977db425e5a283c5f26b13b452a84868a5c5a"
+CONTRACT = json.loads((Path(__file__).resolve().parent / "data_contract.json").read_text())
+HF_REVISION = CONTRACT["huggingface_revision"]
 BIN_S = 1.36
 THERMAL_FEATURES = (
     "surface_temperature_C", "wall_superheat_C", "tc_spread_C", "thermal_fit_R2",

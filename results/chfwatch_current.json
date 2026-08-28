@@ -1,6 +1,8 @@
 {
   "baseline": "chfwatch-current-data",
   "protocol": "leave-one-dataset-out",
+  "contract_schema_version": "1.0",
+  "release": "v0.1.0",
   "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
   "bin_s": 1.36,
   "features": [
@@ -13,6 +15,7 @@
   ],
   "target": "processed_heat_flux_W_cm2",
   "target_status": "screening-level processed target; not a confirmed CHF label",
+  "target_independent_physical_measurement": false,
   "folds": [
     {
       "train_dataset": "BB-4",

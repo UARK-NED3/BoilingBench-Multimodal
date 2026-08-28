@@ -1,7 +1,9 @@
 # BoilingBench current-release audit
 
+- Contract schema: `1.0`
+- Release: `v0.1.0`
 - Hugging Face revision: `e4d977db425e5a283c5f26b13b452a84868a5c5a`
-- Generated: `2026-08-28T16:07:08.027739+00:00`
+- Generated: `2026-08-28T16:20:44.492830+00:00`
 - Scope: public processed exports; no raw files copied into this repository
 
 | Dataset | Status | Duration (s) | Samples | Hydrophone | Microphone | AE hits | Continuous AE | CHF status |

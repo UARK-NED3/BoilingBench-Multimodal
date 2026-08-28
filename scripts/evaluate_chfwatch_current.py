@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "baselines" / "chfwatch"))
-from current_data import BIN_S, COMMON_FEATURES, HF_REVISION, load_processed_case  # noqa: E402
+from current_data import BIN_S, COMMON_FEATURES, CONTRACT, HF_REVISION, load_processed_case  # noqa: E402
 
 
 def main() -> None:
@@ -29,11 +29,14 @@ def main() -> None:
     result = {
         "baseline": "chfwatch-current-data",
         "protocol": "leave-one-dataset-out",
+        "contract_schema_version": CONTRACT["schema_version"],
+        "release": CONTRACT["release"],
         "hf_revision": HF_REVISION,
         "bin_s": BIN_S,
         "features": list(COMMON_FEATURES),
         "target": "processed_heat_flux_W_cm2",
         "target_status": "screening-level processed target; not a confirmed CHF label",
+        "target_independent_physical_measurement": CONTRACT["target"]["independent_physical_measurement"],
         "folds": [],
     }
     for test_name, (test, meta) in cases.items():

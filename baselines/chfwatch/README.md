@@ -28,6 +28,12 @@ independent runs and confirmed event labels.
 
 ## Reproduce
 
+The machine-readable contract is `data_contract.json`. It pins the Hugging Face
+revision, case directories, target provenance, modality expectations, and split
+policy. The downloader fetches the small processed files needed for this
+baseline and intentionally does not fetch the multi-gigabyte raw waveform,
+video, LVM, or DTA exports.
+
 Download the processed files for BB-1 through BB-4 from the Hugging Face dataset
 at revision `e4d977db425e5a283c5f26b13b452a84868a5c5a`, arranged as:
 
@@ -39,6 +45,7 @@ at revision `e4d977db425e5a283c5f26b13b452a84868a5c5a`, arranged as:
 Then run:
 
     pip install numpy pandas scikit-learn
+    python scripts/download_current_processed.py --data-root <data-root>
     python scripts/audit_current_data.py --data-root <data-root> \
       --out results/boilingbench_audit.json \
       --markdown results/boilingbench_audit.md
@@ -47,7 +54,9 @@ Then run:
 
 The audit records checksums, schemas, timing, modality availability, and event
 provenance. The ablation JSON records constant and ridge baselines, eligible
-datasets, train-only standardization, modality ablations, and metrics. No raw data, private lab
+datasets, train-only standardization, modality ablations, a time-only control,
+and a shuffled-target negative control. Window counts are reported for
+reproducibility but are not independent run counts. No raw data, private lab
 spreadsheet, or inferred CHF label is included in this repository.
 
 ## Relationship to CHF-Watch

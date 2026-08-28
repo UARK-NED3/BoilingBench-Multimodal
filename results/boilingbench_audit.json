@@ -1,6 +1,14 @@
 {
+  "contract_schema_version": "1.0",
+  "release": "v0.1.0",
   "hf_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
-  "generated_utc": "2026-08-28T16:07:08.027739+00:00",
+  "target": {
+    "name": "heat_flux_W_cm2",
+    "status": "derived_analysis_product",
+    "independent_physical_measurement": false,
+    "use_as_confirmed_chf_label": false
+  },
+  "generated_utc": "2026-08-28T16:20:44.492830+00:00",
   "cases": [
     {
       "dataset": "BB-1",

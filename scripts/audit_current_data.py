@@ -15,15 +15,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-HF_REVISION = "e4d977db425e5a283c5f26b13b452a84868a5c5a"
-DATASETS = ("BB-1", "BB-2", "BB-3", "BB-4")
-REQUIRED = (
-    "summary.json", "critical_events.csv", "time_alignment.json",
-    "ae_hit_parameters_aligned.csv", "hydrophone_band_integrated_power.csv",
-    "thermal_timeseries.npz",
-)
-OPTIONAL = ("microphone_band_integrated_power.csv",)
-OPTIONAL += ("ae_wfs_band_integrated_power.csv", "ae_wfs_channel_1_metadata.json")
+ROOT = Path(__file__).resolve().parent.parent
+CONTRACT = json.loads((ROOT / "baselines" / "chfwatch" / "data_contract.json").read_text())
+HF_REVISION = CONTRACT["huggingface_revision"]
+DATASETS = tuple(CONTRACT["datasets"])
+REQUIRED = tuple(CONTRACT["required_processed_files"])
+OPTIONAL = tuple(CONTRACT["optional_processed_files"])
 
 
 def sha256(path: Path) -> str:
@@ -114,6 +111,11 @@ def audit_case(root: Path, dataset: str) -> dict[str, object]:
         warnings.append("continuous AE is represented by processed band-power; raw waveform arrays are not audited")
     else:
         warnings.append("continuous AE waveform feature export is absent from this case")
+    expected = CONTRACT["datasets"][dataset]
+    if available["microphone"] != expected["microphone_band_power"]:
+        errors.append("observed microphone availability does not match the data contract")
+    if available["continuous_ae_waveform"] != expected["continuous_ae_waveform"]:
+        errors.append("observed continuous-AE availability does not match the data contract")
     warnings.append("processed heat flux and chf_proxy are not confirmed CHF labels")
     return {
         "dataset": dataset,
@@ -134,6 +136,8 @@ def markdown(report: dict[str, object]) -> str:
     lines = [
         "# BoilingBench current-release audit",
         "",
+        f"- Contract schema: `{CONTRACT['schema_version']}`",
+        f"- Release: `{CONTRACT['release']}`",
         f"- Hugging Face revision: `{report['hf_revision']}`",
         f"- Generated: `{report['generated_utc']}`",
         "- Scope: public processed exports; no raw files copied into this repository",
@@ -163,7 +167,10 @@ def main() -> None:
     parser.add_argument("--markdown", type=Path)
     args = parser.parse_args()
     report = {
+        "contract_schema_version": CONTRACT["schema_version"],
+        "release": CONTRACT["release"],
         "hf_revision": HF_REVISION,
+        "target": CONTRACT["target"],
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "cases": [audit_case(args.data_root, dataset) for dataset in DATASETS],
     }
