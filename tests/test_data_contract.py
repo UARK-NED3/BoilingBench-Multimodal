@@ -12,6 +12,8 @@ def test_current_data_contract_is_pinned_and_explicit() -> None:
     assert contract["benchmark"] == "BoilingBench-Multimodal"
     assert contract["release"] == "v0.1.0"
     assert contract["huggingface_revision"] == "e4d977db425e5a283c5f26b13b452a84868a5c5a"
+    assert contract["full_public_archive"]["expected_file_count"] == 6915
+    assert contract["full_public_archive"]["expected_bytes"] == 33193155778
     assert set(contract["datasets"]) == {"BB-1", "BB-2", "BB-3", "BB-4"}
     assert contract["target"]["independent_physical_measurement"] is False
     assert contract["target"]["use_as_confirmed_chf_label"] is False

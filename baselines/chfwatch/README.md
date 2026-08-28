@@ -26,6 +26,44 @@ reproduce the historical NED3-007 headline numbers. It is a transparent
 current-release baseline that can grow when the benchmark adds more
 independent runs and confirmed event labels.
 
+## Full public archive
+
+The complete public snapshot at the pinned revision is 6,915 files totaling
+33,193,155,778 bytes (approximately 32.9 GB) and includes the BB-1 through
+BB-7 material, BB-5 human annotations/images, raw sensor exports, videos, and
+published model assets. Store it outside the repository and verify it against
+the Hub manifest:
+
+    python scripts/download_public_archive.py \
+      --data-root /path/to/BoilingBench-public-e4d977db
+    python scripts/verify_public_archive.py \
+      --data-root /path/to/BoilingBench-public-e4d977db \
+      --out results/public_archive_manifest.json
+
+The contract records the expected file count and byte total. The archive
+verifier ignores the downloader's local cache metadata but fails on missing,
+extra, or size-mismatched public files.
+
+## GPU experiments
+
+With a CUDA-compatible PyTorch installation (`requirements-gpu.txt`), the
+archive supports two reproducible GPU diagnostics:
+
+    python scripts/train_gpu_temporal_heat_flux.py \
+      --data-root /path/to/BoilingBench-public-e4d977db \
+      --out results/gpu_temporal_heat_flux.json \
+      --device cuda --amp
+    python scripts/train_gpu_bubble_area.py \
+      --data-root /path/to/BoilingBench-public-e4d977db \
+      --out results/gpu_bubble_area.json \
+      --device cuda --amp
+
+The temporal experiment holds out each complete BB-1 through BB-4 dataset and
+uses thermocouple/pressure sequences. The visual experiment fits only on the
+public BubbleID base Train directory, evaluates the explicit base Test split,
+and reports flow/new-facility domain transfer when those paired annotations are
+available. Neither experiment turns screening markers into CHF ground truth.
+
 ## Reproduce
 
 The machine-readable contract is `data_contract.json`. It pins the Hugging Face

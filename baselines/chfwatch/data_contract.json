@@ -4,6 +4,17 @@
   "release": "v0.1.0",
   "huggingface_dataset": "hanhuark/BoilingBench-Multimodal",
   "huggingface_revision": "e4d977db425e5a283c5f26b13b452a84868a5c5a",
+  "full_public_archive": {
+    "expected_file_count": 6915,
+    "expected_bytes": 33193155778,
+    "includes": [
+      "BoilingBench-1 through BoilingBench-4 multimodal data",
+      "BoilingBench-5 human-annotated images and model assets",
+      "BoilingBench-6 hydrophone reference data",
+      "BoilingBench-7 IR immersion-cooling data"
+    ],
+    "download_scope": "Complete public dataset snapshot at the pinned revision; stored outside the repository."
+  },
   "scope": "Public processed exports for cross-dataset baseline evaluation.",
   "target": {
     "name": "heat_flux_W_cm2",

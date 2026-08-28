@@ -1,0 +1,4 @@
+# GPU experiments for the public archive; install a CUDA-compatible PyTorch build.
+numpy
+pillow
+torch
