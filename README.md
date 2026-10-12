@@ -2,6 +2,9 @@
 
 BoilingBench-Multimodal is an NED³ benchmark and dataset family for machine learning, computer vision, and multimodal analysis of boiling and two-phase thermal systems. It combines synchronized measurements, BoilingLab-derived annotations, human image annotations, and single-modality reference datasets.
 
+Repository scope, evidence, and reuse boundaries are also available in the
+[NED3 resource manifest](.ned3/resource-manifest-v0.1.json).
+
 This repository is the benchmark control plane: dataset cards, schemas, manifests, task definitions, split rules, validation scripts, and reproducibility documentation. Large raw archives are not committed to Git; distribute them through an archival repository or approved Hugging Face revision with checksums and a DOI where available.
 
 ## Dataset family
